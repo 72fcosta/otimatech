@@ -1,0 +1,20 @@
+corbotao(background = colors)
+    background: background
+    border-color: background
+    color white
+    &:hover, &:focus
+        background: background + 20%
+        border-color: background + 20%
+
+clearfix()
+    *zoom 1
+    &:before
+    &:after
+        content ''
+        display table
+    &:after
+        clear both
+        
+size(width = 15px, height = 15px)
+    width: width
+    height: height

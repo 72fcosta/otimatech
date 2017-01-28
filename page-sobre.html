@@ -1,0 +1,27 @@
+---
+layout: page
+title: "A empresa"
+permalink: /sobre.html
+image: "sobre"
+intro: "Um pouco sobre nossa empresa."
+sitemap:
+exclude: "no"
+---
+
+<div class="center">
+    <div class="page-content">
+        {% for post in site.tags.about limit:3 %}
+        <div class="part">
+            <h3 class="part-title">{{ post.title }}</h3>
+            <div class="part-content">
+                {% if post.image %}
+                <div class="part-image">
+                    <img src="/assets/img/{{ post.image }}.jpg" alt="Mapa da localização da sede da empresa" />
+                </div>
+                {% endif %}
+                {{ post.content }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<section class="cards-group">
+	<ul class="cards center">
+		{% for post in site.tags.card limit:3  %}
+			<li class="inner-cards">
+				<div class="title-cards-group">
+					<i class="icon-cards fa fa-{{ post.icon }} {{ post.icon-class }}"></i>
+					<h2 class="title-cards">{{ post.title }}</h2>
+				</div>
+				<div class="content-cards-group">
+					<p>{{ post.excerpt }}</p>
+				</div>
+				<div class="btn-cards-group">
+					<a class="btn btn-default btn-block btn-p saibamais-cards" href="{{ post.link }}"><i class="fa fa-plus"></i> </a>
+				</div>
+			</li>
+		{% endfor %}
+	</ul>	
+</section>

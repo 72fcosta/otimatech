@@ -1,0 +1,31 @@
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }} - {{ site.description }}{% endif %}</title>
+	<!-- <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title> -->
+	<meta name="description" content="{% if page.intro %}{{ page.intro | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+
+	<noscript>Desculpe, seu  browser não suporta JavaScript!</noscript>
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="{{ '/assets/fonts/fonts.css' | prepend: site.baseurl | prepend: site.url }}" />
+	<link rel="stylesheet" href="{{ '/assets/css/third.css' | prepend: site.baseurl | prepend: site.url }}" />
+	<link rel="stylesheet" href="{{ '/assets/css/style.css?v=@version@' | prepend: site.baseurl | prepend: site.url }}" />
+
+	<link rel="alternate" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" hreflang="pt-br" />
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+	<meta name="google-site-verification" content="{{ site.search_console }}" />
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicon/apple-touch-icon.png' | prepend: site.baseurl | prepend: site.url }}" />
+	<link rel="icon" type="image/png" href="{{ '/assets/favicon/favicon-32x32.png' | prepend: site.baseurl | prepend: site.url }}" sizes="32x32" />
+	<link rel="icon" type="image/png" href="{{ '/assets/favicon/favicon-16x16.png' | prepend: site.baseurl | prepend: site.url }}" sizes="16x16" />
+	<link rel="manifest" href="{{ '/assets/favicon/manifest.json' | prepend: site.baseurl | prepend: site.url }}" />
+	<link rel="mask-icon" href="{{ '/assets/favicon/safari-pinned-tab.svg' | prepend: site.baseurl | prepend: site.url }}" color="#5bbad5" />
+	<!-- <meta name="theme-color" content="#F66B0B" /> -->
+</head>

@@ -1,0 +1,23 @@
+<section class="slice depoimentos">
+	<div class="slice-inner center">
+        <h2 class="slice-title depoimentos-title">{{ site.slice_depoimentos_title }}</h2>
+        <p class="slice-subtitle depoimentos-subtitle">{{ site.slice_depoimentos_description }}</p>
+        <div class="depoimentos-main">
+            {% for post in site.tags.depoimento limit:4  %}
+            <div class="depoimento">
+                <div class="depoimento-img">
+                    <a href="{{ post.facebook }}" target="_blank">
+                        <img src="/assets/img/{{ post.image }}.jpg" alt="Rosto do {{ post.title }}" />
+                    </a>
+                </div>
+                <div class="depoimento-txt">
+                    {{ post.content }}
+                </div>
+                <div class="depoimento-nome">
+                    <i class="fa fa-facebook-official"></i> <a href="{{ post.facebook }}" target="_blank">{{ post.title }}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

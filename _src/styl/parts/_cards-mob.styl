@@ -1,0 +1,78 @@
+.cards-group
+    +below(1200px)
+        ul.cards
+            li.inner-cards
+                .title-cards-group
+                    .title-cards
+                        font-size: 26px
+    +below(1100px)
+        ul.cards
+            li.inner-cards
+                padding: 20px
+                .title-cards-group
+                    .title-cards
+                        font-size: 24px
+    +below(1000px)
+        padding-top: 30px
+        ul.cards
+            li.inner-cards
+                .title-cards-group
+                    height 48px
+                    i.icon-cards
+                        width 38px
+                        height 38px
+                        font-size: 40px
+                    .title-cards
+                        font-size: 20px
+                        line-height: 1
+                .content-cards-group
+                    height 290px
+    +below(900px)
+        ul.cards
+            li.inner-cards
+                .title-cards-group
+                    .title-cards
+                        font-size: 18px
+    +below(break-nav)
+        ul.cards
+            li.inner-cards:not(:last-child)
+                margin-bottom: 10px
+            li.inner-cards
+                lost-column 1/1 1 0
+                border-radius 0
+                display flex
+                align-items center
+                padding 0 30px 0 15px
+                height 70px
+                border none
+                .title-cards-group
+                    display flex
+                    align-items center
+                    lost-column 9/10 3 0
+                    .title-cards
+                        font-size: 28px
+                        line-height: 24px
+                        margin 0
+                .content-cards-group
+                    display none
+                .btn-cards-group
+                    lost-column 1/10 3 0
+                    .saibamais-cards
+                        border 0
+                        padding 0
+                        width 40px
+                        height 40px
+                        border-radius 50%           
+                        &:after
+                            content ""
+                            line-height: 40px
+                            font-weight: bold
+    +below(340px)
+        ul.cards
+            li.inner-cards
+                .title-cards-group
+                    i.icon-cards
+                        width 42px
+                        font-size: 40px
+                    .title-cards
+                        font-size: 24px

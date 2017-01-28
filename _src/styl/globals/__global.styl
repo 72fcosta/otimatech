@@ -1,0 +1,101 @@
+*, 
+*:after,
+*:before
+    margin 0
+    padding 0
+    box-sizing border-box  
+
+html
+    height 100% //Para stick footer
+
+body
+    background: #EFEFEF
+    min-height 100% //Para stick footer
+    display: flex //Para stick footer
+    flex-direction: column //Para stick footer
+        
+.main
+    position: relative
+    display flex
+    flex 1
+    flex-direction column
+
+li
+    list-style: none
+
+.clear
+    clearfix()
+    
+.center
+    lost-center 1200px
+
+.left-img
+    float left
+    padding: 0 20px 15px 0
+
+.right-img
+    float right
+    padding: 0 0 15px 20px
+    
+.center-img img
+    display block
+    margin 20px auto
+    padding: 15px 0
+    
+//Override mobile style for phone number
+a[href^=tel]e
+    color: colorp
+    text-decoration: none
+    pointer-events:none
+
+//Não exibir pontilhados nos links
+a:focus
+    outline: none!important
+
+
+.postfix.button, .prefix.button
+    text-align: center!important
+
+//botões
+a.btn.btn-p, button.btn.btn-p
+    corbotao(colorp)
+    //box-shadow: 0 3px 0 0 colorp - 15%;
+
+a.btn.btn-s, button.btn.btn-s
+    corbotao(colors)
+    //box-shadow: 0 3px 0 0 colors - 15%;
+
+a.btn.btn-t, button.btn.btn-t
+    corbotao(cinza)
+    //box-shadow: 0 3px 0 0 colort - 15%;
+
+a.btn.btn-q, button.btn.btn-q
+    corbotao(transparent)
+    border-color: cinza
+    &:hover, &:focus
+        border-color: lighten(cinza, 20%)
+        
+.btn
+    border-radius radius
+    
+a.btn-huge, button.btn-huge
+    padding 20px 40px
+    font-size: 26px
+    font-weight: bold
+
+// loader
+i.fa.fa-refresh
+    display none
+
+//Erros de validação dos formulários    
+form.form
+    .form-error
+        display block
+        border-radius radius
+        background: #F04124
+        color white
+        margin 2px 0 0
+        padding: 0 8px
+        font-size: 14px
+        line-height: 28px
+    

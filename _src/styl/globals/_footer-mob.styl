@@ -1,0 +1,47 @@
+.home .footer
+    +below(break-nav)
+        top 0
+        margin-bottom 0
+.footer
+    +below(1230px)
+        .footer-main
+            .footer-main-inner
+                padding-left 15px
+                padding-right: 15px
+                .footer-links
+                    ul
+                        li
+                            lost-column 1/3 3
+        .footer-copyright
+            padding-left 15px
+            padding-right 15px
+    +below(810px)
+        .footer-main
+            .footer-main-inner
+                .footer-links
+                    ul
+                        li
+                            lost-column 1/2 2 0
+
+    +below(670px)
+        .footer-main
+            .footer-main-inner
+                display block
+                lost-utility clearfix
+                .footer-links
+                    margin-top 15px
+                    margin-bottom 15px
+                .footer-logo, .footer-links, .footer-facebook
+                    lost-column 1/1 1
+                .footer-logo, .footer-facebook
+                    display block
+                    text-align: center
+        .footer-copyright
+            .center
+                text-align: center
+                .copyright-txt, .diple-link
+                    float none
+                    line-height: 20px
+                .diple-link
+                    display inline-block
+                    background-position 0

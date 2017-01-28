@@ -1,0 +1,23 @@
+---
+layout: page
+title: "Personalize"
+permalink: /info2.html
+image: "uniformes"
+intro: "Escolha um modelo entre as sugestões abaixo ou solicite um layout de acordo com a sua necessidade."
+---
+
+<div class="center">
+    <div class="page-content">
+        {% for post in site.tags.modelo %}
+        <div class="part">
+            <h3 class="part-title">{{ post.title }}</h3>
+            <div class="part-content">
+                {{ post.content }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="page-footer">
+        <a class="btn btn-default btn-lg btn-huge btn-p" href="/contato.html">Solicite um orçamento sem compromisso <i class="fa fa-angle-double-right"></i></a>
+    </div>
+</div>

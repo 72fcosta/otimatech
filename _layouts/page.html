@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+{% include head.html %}
+<body class="page {% if page.permalink == '/404.html' %}{{ 'error404' }}{% else %}{{ page.permalink | remove: '/' | remove: '.html' }}{% endif %}">
+    {% include header.html %}
+    {% include parts/intro-page.html %}
+    <section class="main">
+        <div class="main-inner">
+            {{ content }}
+        </div>
+    </section>
+    {% include modals/contrato.html %}
+    {% include footer.html %}
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+{% include head.html %}
+<body class="post">
+    {% include header.html %}
+    {% include parts/intro-post.html %}
+    <section class="main">
+        <div class="main-inner">
+            <div class="center">
+                <div class="post-content">
+                    <div class="part">
+                        <div class="part-content">
+                            <p class="part-tags">{{ page.tags }}</p>
+                            <h2 class="part-title">{{ page.title }}</h2>
+                            {% include parts/share.html %}
+                            {{ content }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include footer.html %}
+</body>
+</html>

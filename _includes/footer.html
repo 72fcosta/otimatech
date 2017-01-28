@@ -1,0 +1,42 @@
+<footer class="footer">
+	<div class="footer-main">
+        <div class="center">
+            <div class="footer-main-inner">
+                <div class="footer-logo">
+                    <img src="/assets/img/logo-w.png" alt="" />
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        {% for top_item in site.links %}
+                            {% if top_item.nested %}
+                                {% for nested_item in top_item.nested %}
+                                    <li>
+                                        <a href="{{ nested_item.sub_url }}">{{ nested_item.sub_title }}</a>
+                                    </li>
+                                {% endfor %}
+                            {% else %}
+                                <li>
+                                    <a href="{{ top_item.top_url }}">{{ top_item.top_title }}</a>
+                                </li>                            
+                            {% endif %}
+                        {% endfor %}
+                    </ul>               
+                </div>
+                <div class="footer-facebook">
+                    <p class="facebook-txt">Siga-nos</p>
+                    <a class="facebook-link" href="https://www.facebook.com/{{ site.face_username }}" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="center">
+            <p class="copyright-txt">©  {{ site.time | date: "%Y" }} {{ site.razao_social }} - Todos os direitos reservados.</p>
+            <a class="diple-link" href="https://diple.net" target="_blank">Diple : Web Design</a>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="{{ "/assets/js/third.js?v=@version@" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/script.js?v=@version@" | prepend: site.baseurl }}"></script>

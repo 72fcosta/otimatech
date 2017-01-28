@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+{% include head.html %}
+<body class="home">    
+    {% include header.html %}
+    {% include parts/intro-home.html %}
+    <section class="main">
+        <div class="main-inner">
+            {{ content }}
+        </div>
+    </section>
+    {% include modals/contato.html %}
+    {% include modals/newsletter.html %}
+    {% include footer.html %}
+</body>
+</html>

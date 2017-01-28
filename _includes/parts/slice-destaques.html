@@ -1,0 +1,19 @@
+<section class="slice destaques">
+	<div class="slice-inner center">
+		<h2 class="slice-title destaque-title">{{ site.slice_destaques_title }}</h2>
+		<p class="slice-subtitle destaque-subtitle">{{ site.slice_destaques_description }}</p>
+		<div class="destaques-main">
+			{% for post in site.tags.destaque limit:4  %}
+			<div class="destaque">
+				<div class="destaque-rear">
+					<img class="destaque-img" src="/assets/img/{{ post.image }}.jpg" alt="Imagem ilustrativa para {{ post.title }}" />
+				</div>
+				<div class="destaque-front">
+					<h3 class="destaque-title">{{ post.title }}</h3>
+					<a class="btn bnt-default btn-t" href="{{ post.link }}">SAIBA <i class="fa fa-plus"></i></a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

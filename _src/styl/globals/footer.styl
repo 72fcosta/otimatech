@@ -1,0 +1,68 @@
+.home .footer
+    top -74px
+    margin-bottom -74px
+.footer
+    overflow: hidden
+    position: relative
+    .footer-main
+        background: cinza - 80%
+        .footer-main-inner
+            display flex
+            justify-content space-between
+            align-items center
+            padding: 15px 0
+            .footer-facebook
+                margin-left 30px
+                display flex
+                align-items center
+                .facebook-txt, .facebook-link
+                    display inline-block
+                .facebook-txt
+                    text-transform: uppercase
+                    padding-right: 5px
+                .facebook-txt, .facebook-link
+                    color white
+                    margin 0
+                .fa
+                    display block
+                    font-size: 28px
+            .footer-links
+                flex-grow 1
+                ul
+                    margin 0
+                    lost-utility clearfix
+                    li
+                        lost-column 1/4 4
+                        margin-bottom 2px
+                        &:first-child
+                            border-left none
+                        a
+                            padding 5px 15px
+                            margin-left 1px
+                            margin-right: 1px
+                            display block
+                            background: cinza - 77%
+                            white-space nowrap
+                            color cinza - 10%
+            .footer-logo
+                margin-right 30px
+                img
+                    width 180px
+                
+    .footer-copyright
+        background: white
+        .center
+            padding 0
+            .copyright-txt, .diple-link
+                line-height: 46px            
+                margin 0
+                font-size: 13px
+            .copyright-txt
+                float left
+            .diple-link
+                float right
+                text-indent 22px
+                background url("/assets/img/diple-logo.png") no-repeat left 15px
+                background-size: 17px
+                color texts
+                filter grayscale(1)

@@ -1,0 +1,16 @@
+<section class="slice newsletter">
+	<div class="slice-inner center">
+		<h2 class="slice-title newsletter-title">{{ site.slice_newsletter_title }}</h2>
+		<p class="slice-subtitle newsletter-subtitle">{{ site.slice_newsletter_description }}</p>
+		<form id="form-newsletter" class="form" method="post" action="https://madmimi.com/signups/subscribe/{{ site.madmimi }}">
+			<label class="sr-only" for="signup[email]">Email address</label>
+			<input type="hidden" name="utf8" value="✓" />
+			<div class="input-group input-group-lg">
+				<input class="form-control" name="signup[email]" type="text" placeholder="Digite aqui seu e-mail" />
+				<span class="input-group-btn">
+					<button type="submit" class="btn btn-default btn-t"><span class="fa fa-envelope"></span></button>
+				</span>
+			</div>
+		</form>
+	</div>
+</section>

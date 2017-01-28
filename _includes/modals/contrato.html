@@ -1,0 +1,16 @@
+<div class="remodal" data-remodal-id="contrato" data-remodal-options="hashTracking: true">
+    <div class="remodal-inner">
+        {% for post in site.tags.contrato limit:1 %}
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <div class="modal-header">
+            <h3 class="modal-title">{{ post.title }}</h3>
+        </div>
+        <div class="modal-body">            
+            {{ post.content }}            
+        </div>
+        <div class="modal-footer">
+            <a class="btn btn-primary btn-lg" data-remodal-action="close" href="/">FECHAR</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>

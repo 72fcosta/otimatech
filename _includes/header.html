@@ -1,0 +1,34 @@
+{% include parts/analytics-tracking.html %}
+<section class="header">
+	<div class="header-inner center">
+        {% if page.layout == 'home' %}
+		<h1 class="logo">
+			<a href="/">{{ site.title }}</a>
+		</h1>
+        {% else %}
+        <span class="logo">
+            <a href="/">{{ site.title }}</a>
+        </span>
+        {% endif %}
+
+		<nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+                {% for top_item in site.links %}
+                <li>
+                    <a href="{{ top_item.top_url }}">{{ top_item.top_title }}</a>
+                    {% if top_item.nested %}
+                    <ul class="nav-dropdown">
+                        {% for nested_item in top_item.nested %}
+                        <li>
+                            <a href="{{ nested_item.sub_url }}">{{ nested_item.sub_title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</section>

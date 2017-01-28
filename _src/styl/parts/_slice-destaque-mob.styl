@@ -1,0 +1,27 @@
+.slice.destaques
+    +below(1200px)
+        .destaques-main
+            .destaque
+                lost-column 1/2 2 0
+                height 105px
+                .destaque-front
+                    .destaque-title
+                        font-size: 36px
+    +below(800px)
+        .destaques-main
+            .destaque
+                .destaque-front
+                    .destaque-title
+                        font-size: 36px
+    +below(600px)
+        .destaques-main
+            padding-left 15px
+            padding-right: 15px
+            .destaque
+                lost-column 1/1 1
+                border-bottom 0
+                &:last-child
+                    border-bottom 8px solid cinza
+                .destaque-front
+                    .destaque-title
+                        font-size: 26px    

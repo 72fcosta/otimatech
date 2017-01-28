@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+{% include head.html %}
+<body class="post">
+    {% include header.html %}
+    {% include parts/intro-product.html %}
+    <section class="main">
+        <div class="main-inner">
+            <div class="center">
+                <div class="page-content">
+                    <div class="part">
+                        <div class="part-content">
+                            {{ content }}
+                        </div>
+                        {% include parts/share.html %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include footer.html %}
+</body>
+</html>

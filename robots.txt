@@ -1,0 +1,9 @@
+---
+layout: null
+---
+
+# robotstxt.org/
+
+User-agent: *
+
+Sitemap: {{ site.url }}/sitemap.xml

@@ -1,0 +1,51 @@
+.slice.depoimentos
+    +below(1200px)
+        .depoimentos-main
+            .depoimento
+                .depoimento-txt
+                    p
+                        font-size: 15px
+    +below(1000px)
+        .depoimentos-main
+            .depoimento
+                .depoimento-img
+                    display flex
+                    align-items center
+                    background: cinza - 10%
+                    lost-column 3/12 2 0
+                    height 150px
+                .depoimento-txt
+                    lost-column 9/12 2
+                    height 100%
+                .depoimento-nome
+                    border-radius 0
+                    lost-column 1/1 1
+                    text-align: center
+    +below(850px)
+        .depoimentos-main
+            .depoimento:not(:nth-child(3)):not(:nth-child(4))
+                margin-bottom 10px
+            .depoimento
+                .depoimento-img
+                    height 210px
+    +below(750px)
+        .depoimentos-main
+            .depoimento
+                .depoimento-img
+                    height 190px
+    +below(650px)
+        .depoimentos-main
+            .depoimento
+                lost-column 1/1 1
+                .depoimento-img
+                    height 170px
+    +below(500px)
+        .depoimentos-main
+            .depoimento
+                .depoimento-img
+                    height 160px
+    +below(400px)
+        .depoimentos-main
+            .depoimento
+                .depoimento-img
+                    height 190px

@@ -1,0 +1,39 @@
+.home
+    .main
+        position: relative
+        top -74px
+        .slice
+            &:nth-child(odd)
+                background: cinza
+                color texts
+                .slice-title
+                    &::after, &::before
+                        border-bottom solid darken(cinza, 10%)
+            &:nth-child(even)
+                background: colors
+                color white
+                .slice-title
+                    &::after, &::before
+                        border-bottom solid lighten(colors, 10%)
+            .slice-inner
+                overflow hidden
+                .slice-title, .slice-subtitle
+                    text-align: center
+                .slice-title
+                    font-weight: bold
+                    text-transform: uppercase
+                    margin-top  0
+                    &::after, &::before
+                        position: relative
+                        content ""
+                        width 100%
+                        display inline-block
+                        vertical-align middle
+                    &::after
+                        right -15px
+                        margin-right -100%
+                    &::before
+                        left -15px
+                        margin-left: -100%
+                .slice-subtitle
+                    margin-bottom 50px

@@ -1,0 +1,19 @@
+---
+layout: page
+title: "Pro"
+permalink: /destaques.html
+image: "destaques"
+intro: "Nos preocupamos em todos os detalhes dos nossos uniformes no que se refere a personalização, durabilidade, conforto e acabamento."
+sitemap:
+    exclude: "no"
+---
+
+<div class="center">
+    <div class="page-content">
+    {% for post in site.tags.destaque %}
+        <div class="part">
+            <h3 class="part-title"><i class="fa fa-{{ post.icon }}"></i> {{ post.title }}</h3>
+            {{  post.content }}
+        </div>
+        {% endfor %}
+    </div>
