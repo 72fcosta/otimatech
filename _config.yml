@@ -48,9 +48,13 @@ links:
     nested:
       - sub_title: Planos
         sub_url: "/produtos.html"
-        sub_intro: "Nossos modelos profissionais exclusivos."
-  - top_title: Tecnologia
-    top_url: "#!/"
+        sub_intro: "Planos sob medida pra você!"
+  - top_title: Promoção
+    top_url: "/oferta.html"
+    top_intro: "Cupons exclusivos de descontos!"
+  - top_title: Área
+    top_url: "/area.html"
+    top_intro: "Nossa área de cobertura."
   - top_title: Sobre Nós
     top_url: "/sobre.html"
     top_intro: "Um pouco sobre nossa empresa."

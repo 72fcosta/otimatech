@@ -4,7 +4,6 @@
     .intro-page-img
         position absolute
         width 100%
-        background: colors
         img
             display block
             width 100%
@@ -25,6 +24,11 @@
             
 if intro-style
     .intro-style
+        @extend .intro-page .intro-page-img img
+        position: absolute
+        border-left 15px dashed colors
+        border-right 15px dashed colors
+    .intro-style-2
         @extend .intro-page .intro-page-img img
         position: absolute
         background: rgba(colors, .8)

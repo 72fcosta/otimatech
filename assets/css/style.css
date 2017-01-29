@@ -1658,10 +1658,10 @@ h5 {
 .intro-page .intro-page-img {
   position: absolute;
   width: 100%;
-  background: #e85b54;
 }
 .intro-page .intro-page-img img,
-.intro-style {
+.intro-style,
+.intro-style-2 {
   display: block;
   width: 100%;
   height: 210px;
@@ -1686,6 +1686,11 @@ h5 {
   font-size: 20px;
 }
 .intro-style {
+  position: absolute;
+  border-left: 15px dashed #e85b54;
+  border-right: 15px dashed #e85b54;
+}
+.intro-style-2 {
   position: absolute;
   background: rgba(232,91,84,0.8);
 }
