@@ -57,7 +57,7 @@ links:
     top_url: "#!/"
   - top_title: Contato
     top_url: "/contato.html"
-    top_intro: "Use o formulário abaixo para enviar sua mensagem ou solicitar um orçamento."
+    top_intro: "Use o formulário abaixo para enviar sua mensagem."
 
 # exclude my node related stuff
 exclude: ['package.json', 'node_modules', '_site']
