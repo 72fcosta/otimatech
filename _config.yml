@@ -43,9 +43,12 @@ compress_html:
 # Links to include in menu navigation
 # For external links add external: true
 links:
-  - top_title: Planos
-    top_url: "/produtos.html"
-    intro: "Nossos modelos profissionais exclusivos."
+  - top_title: Internet
+    top_url: "#!/"
+    nested:
+      - sub_title: Planos
+        sub_url: "/produtos.html"
+        sub_intro: "Nossos modelos profissionais exclusivos."
   - top_title: Artigos
     top_url: "#!/"
   - top_title: Tecnologia
@@ -53,7 +56,8 @@ links:
   - top_title: Sobre Nós
     top_url: "#!/"
   - top_title: Contato
-    top_url: "contato.html"
+    top_url: "/contato.html"
+    top_intro: "Use o formulário abaixo para enviar sua mensagem ou solicitar um orçamento."
 
 # exclude my node related stuff
 exclude: ['package.json', 'node_modules', '_site']
