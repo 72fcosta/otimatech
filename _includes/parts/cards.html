@@ -10,7 +10,11 @@
 					<p>{{ post.excerpt }}</p>
 				</div>
 				<div class="btn-cards-group">
-					<a class="btn btn-default btn-block btn-p saibamais-cards" href="{{ post.link }}"><i class="fa fa-plus"></i> </a>
+					{% if post.link %}
+						<a class="btn btn-default btn-block btn-p saibamais-cards" href="{{ post.link }}"><i class="fa fa-plus"></i> </a>
+					{% else %}
+						<a class="btn btn-default btn-block btn-p saibamais-cards" href="{{ post.url }}"><i class="fa fa-plus"></i> </a>
+					{% endif %}
 				</div>
 			</li>
 		{% endfor %}
