@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Planos com adesão grátis."
+title: "Planos com adesão grátis"
 date: 2016-10-16 21:31:05
 tags:
 - "card"
