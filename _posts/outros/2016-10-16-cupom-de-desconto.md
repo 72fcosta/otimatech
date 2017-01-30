@@ -4,15 +4,18 @@ title: "Cupom de desconto"
 link: "/oferta.html"
 date: 2016-10-16 21:31:05
 tags:
-- "card"
+- oferta
+- card
 icon: "ticket"
 icon-class: "icon-two-card"
 excerpt_separator: <!--more-->
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Garanta o seu cupom!
+
+Solicite abaixo e receba em seu e-mail um cupom de **desconto de 50%** no primeiros mês dos planos de 10 Mega na fibra ou 5 Mega na transmissão via rádio.
+
+Primeiro mês de R$99,90 por **R$49,80**!
+<!--more-->
+
+O cupom tem validade de 90 dias após você recebe-lo em seu e-mail.
