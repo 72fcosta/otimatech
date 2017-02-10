@@ -6,22 +6,21 @@ image: "product"
 
 <div class="center">
     <div class="page-content">
-        {% for category in site.categories %}
-        {% capture category_name %}{{ category | first }}{% endcapture %}
-        {% if category_name != "blog" %}
-        <div class="part-category">
-            <h3 class="part-category-title">{{ category_name }}</h3>
-            <div class="part-category-content">
+        {% include sidebar.html %}
+        <div class="sidemain">
+            {% for category in site.categories %}
+            {% capture category_name %}{{ category | first }}{% endcapture %}
+            {% if category_name != "blog" %}
+            <h3 class="part-title">{{ category_name }}</h3>
+            <div class="part-content">
                 {% for post in site.categories[category_name] %}
-                <div class="part">
-                    <a class="part-front" href="#{{ post.title | slugify }}" >                 
+                <div class="part-content-inner">
+                    <a class="part-img" href="#{{ post.title | slugify }}">
+                        <img src="/assets/img/{{ post.image }}.jpg" alt="Ilustração do produto {{ post.title }}" />
                     </a>
-                    <div class="part-rear">
-                        <img class="part-img" src="/assets/img/{{ post.image }}.jpg" alt="Ilustração do produto {{ post.title }}" />
-                    </div>
-                    <div class="part-content">
+                    <div class="part-txt">
                         <a href="{{ post.url }}">
-                            {{ post.intro }}
+                            {{ post.excerpt }}
                         </a>
                     </div>
                 </div>
@@ -35,8 +34,8 @@ image: "product"
                 </div>
                 {% endfor %}
             </div>
+            {% endif %}
+            {% endfor %}
         </div>
-        {% endif %}      
-        {% endfor %}
     </div>
 </div>

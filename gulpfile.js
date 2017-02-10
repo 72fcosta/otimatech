@@ -12,8 +12,7 @@ var imagemin                = require("gulp-image");
 var notify                  = require("gulp-notify");
 var plumber                 = require("gulp-plumber");
 var postcss                 = require("gulp-postcss");
-var replace                 = require("gulp-replace");
-var shell                   = require("gulp-shell");
+var replace                 = require("gulp-replace");//jekyll
 var sourcemaps              = require("gulp-sourcemaps");
 var stylus                  = require("gulp-stylus");
 var versionAppend           = require("gulp-version-append");
@@ -27,7 +26,6 @@ var rupture                 = require("rupture");
 var fs                      = require("fs");
 var varsProject             = JSON.parse(fs.readFileSync("./vars-project.json"));
 var dominio                 = varsProject.dominio;
-var diplenick               = varsProject.diplenick;
 var regexp                  = new RegExp("https://" + dominio, "g");//jekyll
 var options                 = { }; //webfonts
 
@@ -198,7 +196,7 @@ gulp.task("favicon", function() {
 
 gulp.task("git-add", function() {
     return gulp.src("./")
-    .pipe(git.add());
+    .pipe(git.add({args: "-A"}));
 });
 
 gulp.task("git-commit", function() {

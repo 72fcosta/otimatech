@@ -2,22 +2,27 @@
 layout: page
 title: "Personalize"
 permalink: /info2.html
-image: "uniformes"
+image: "product"
 intro: "Escolha um modelo entre as sugestões abaixo ou solicite um layout de acordo com a sua necessidade."
 ---
 
 <div class="center">
     <div class="page-content">
-        {% for post in site.tags.modelo %}
-        <div class="part">
-            <h3 class="part-title">{{ post.title }}</h3>
+        {% include sidebar.html %}
+        <div class="sidemain">
             <div class="part-content">
-                {{ post.content }}
+                {% for post in site.tags.estampas %}
+                <div class="part-content-inner">
+                    <h4 class="part-subtitle">{{ post.title }}</h4>
+                    <a class="part-img" href="#{{ post.title | slugify }}">
+                        <img src="/assets/img/{{ post.image }}.jpg" alt="Ilustração do layout {{ post.title }}" />
+                    </a>
+                </div>
+                {% endfor %}
+            <div class="part-btn">
+                <a class="info2-btn btn btn-default btn-lg btn-huge btn-block btn-p" href="/contato.html"> <i class="fa fa-angle-double-right"></i></a>
+            </div>
             </div>
         </div>
-        {% endfor %}
-    </div>
-    <div class="page-footer">
-        <a class="btn btn-default btn-lg btn-huge btn-p" href="/contato.html">Solicite um orçamento sem compromisso <i class="fa fa-angle-double-right"></i></a>
     </div>
 </div>

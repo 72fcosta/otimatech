@@ -6,18 +6,16 @@ image: "sobre"
 
 <div class="center">
     <div class="page-content">
-        {% for post in site.tags.about limit:3 %}
-        <div class="part">
+        {% include sidebar.html %}
+        <div class="sidemain">
+            {% for post in site.tags.about %}
             <h3 class="part-title">{{ post.title }}</h3>
             <div class="part-content">
-                {% if post.image %}
-                <div class="part-image">
-                    <img src="/assets/img/{{ post.image }}.jpg" alt="Mapa da localização da sede da empresa" />
+                <div class="part-content-inner">
+                    {{ post.content }}
                 </div>
-                {% endif %}
-                {{ post.content }}
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>

@@ -6,35 +6,38 @@ image: "contato"
 
 <div class="center">
     <div class="page-content">
-        <div class="part">
-            <form accept-charset="UTF-8" class="form" id="form-contato" method="post" action="https://formkeep.com/f/{{ site.formkeep }}">
-                <div class="form-inner">
-                    <div class="form-side">
-                        <div class="form-group form-group-lg has-feedback has-feedback-left">
-                            <label class="control-label" for="contatoNome">Seus dados</label>
-                            <i class="fa fa-user form-control-feedback"></i>
-                            <input class="form-control" type="text" name="contatoNome" placeholder="Nome" />
+        {% include sidebar.html %}
+        <div class="sidemain">
+            <div class="part-content">
+                <form accept-charset="UTF-8" class="form" id="form-contato" method="post" action="https://formkeep.com/f/{{ site.formkeep }}">
+                    <div class="form-inner">
+                        <div class="form-side">
+                            <div class="form-group form-group-lg has-feedback has-feedback-left">
+                                <label class="control-label" for="contatoNome">Seus dados</label>
+                                <i class="fa fa-user form-control-feedback"></i>
+                                <input class="form-control" type="text" name="contatoNome" placeholder="Nome" />
+                            </div>
+                            <div class="form-group form-group-lg has-feedback has-feedback-left">
+                                <label class="control-label sr-only" for="contatoEmail">Email</label>
+                                <i class="fa fa-envelope form-control-feedback"></i>
+                                <input class="form-control" type="text" name="contatoEmail" placeholder="E-mail" />
+                            </div>
+                            <div class="form-group form-group-lg has-feedback has-feedback-left">
+                                <label class="control-label" for="contatoAssunto">Assunto</label>
+                                <i class="fa fa-tag form-control-feedback"></i>
+                                <input class="form-control" type="text" name="contatoAssunto" placeholder="Assunto" />
+                            </div>
                         </div>
-                        <div class="form-group form-group-lg has-feedback has-feedback-left">
-                            <label class="control-label sr-only" for="contatoEmail">Email</label>
-                            <i class="fa fa-envelope form-control-feedback"></i>
-                            <input class="form-control" type="text" name="contatoEmail" placeholder="E-mail" />
-                        </div>
-                        <div class="form-group form-group-lg has-feedback has-feedback-left">
-                            <label class="control-label" for="contatoAssunto">Assunto</label>
-                            <i class="fa fa-tag form-control-feedback"></i>
-                            <input class="form-control" type="text" name="contatoAssunto" placeholder="Assunto" />
+                        <div class="form-side">
+                            <div class="form-group">
+                                <label class="control-label" for="contatoMensagem">Mensagem</label>
+                                <textarea class="form-control" name="contatoMensagem"></textarea>
+                            </div>
                         </div>
                     </div>
-                    <div class="form-side">
-                        <div class="form-group">
-                            <label class="control-label" for="contatoMensagem">Mensagem</label>
-                            <textarea class="form-control" name="contatoMensagem"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <button id="contato-btn" type="submit" class="btn btn-lg btn-p"><i class='fa fa-refresh fa-spin'></i> Enviar</button>
-            </form>
+                    <button id="contato-btn" type="submit" class="btn btn-lg btn-p"><i class='fa fa-envelope'></i> Enviar a mensagem</button>
+                </form>
+            </div>
         </div>
     </div>
 </div>

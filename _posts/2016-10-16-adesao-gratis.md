@@ -1,14 +1,11 @@
 ---
 layout: post
-title: "Velocidade garantida"
+title: "Planos com adesão grátis"
 date: 2016-10-16 21:31:05
-image: ""
-facebook: ""
 tags:
 - "card"
-introduction: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque repudiandae molestias, consequuntur ullam doloremque quasi ea aspernatur neque hic, eveniet libero! Quod veniam nostrum delectus quis aspernatur."
-card-class: "cloud-upload"
-icon-class: "icon-two-card"
+icon: "check-square-o"
+excerpt_separator: <!--more-->
 ---
 
 Lorem ryan ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

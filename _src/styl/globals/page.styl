@@ -5,23 +5,36 @@
             padding 20px
             .page-content
                 lost-utility clearfix
-                .part
+                .sidebar
+                    lost-column 4/14 2
+                .sidemain
+                    lost-column 10/14 2
                     overflow: hidden
                     background: white
                     padding: 20px
-                    border 14px solid white
                     box-shadow 0 0 1px 0 rgba(colors, .5)
-                    margin-bottom 25px
-                    border-radius radius
+                    margin-bottom 20px
+                    .part-title:first-child
+                        margin-top 0
                     .part-title
                         color colors
                         font-weight: bold
                         text-align: left
                         text-transform: uppercase
-                        margin 0 0 15px
+                        margin 15px 0
                         i.fa
                             color colors + 80%
+                    .part-subtitle
+                        color white
+                        margin-bottom 10px
+                        text-transform: uppercase
+                        background: colors
+                        border-radius radius
+                        padding: 8px
+                        display inline-block
                     .part-content
                         overflow: hidden
-                        background: cinza
-                        padding 15px
+                        background: white
+                        padding 20px 20px 0 20px
+                        lost-utility clearfix
+    

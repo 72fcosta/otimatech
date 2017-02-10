@@ -7,7 +7,6 @@ tags:
 - oferta
 - card
 icon: "ticket"
-icon-class: "icon-two-card"
 excerpt_separator: <!--more-->
 ---
 

@@ -1,16 +1,30 @@
 .page.info2
-    .main
-        .main-inner
-            .page-content
-                .part
+    .page-content
+        .sidemain
+            .part-content
+                .part-content-inner
                     lost-column 1/2 2
-                    .part-content
-                        padding 0
-                        background: none
+                    margin-bottom 20px
+                    .part-img
+                        border 4px solid colors
+                        background: white
+                        overflow: hidden
+                        display block
+                        width 100%
+                        height 240px
+                        text-align: center
                         img
-                            width 100%
-                            height auto
-            .page-footer
-                text-align center
-                .btn
-                    text-transform: uppercase
+                            transform: scale(1, 1)
+                            width auto
+                            height 100%
+                            transition-duration: 0.4s;
+                        &:hover img
+                            transform scale(0.94, 0.94)
+                .part-btn
+                    lost-column 1/1 1
+                    text-align center
+                    margin-bottom 25px
+                    .info2-btn
+                        text-transform: uppercase
+                        &:before
+                            content "Solicitar orçamento"

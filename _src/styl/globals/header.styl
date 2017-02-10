@@ -19,7 +19,7 @@
                 width logo-size
                 height nav-height
                 text-indent -9999px
-                background url("/assets/img/logo.png") no-repeat left center
+                background url("/assets/img/logo.png?v=101") no-repeat left center
                 background-size: logo-size
         nav
             float right
@@ -52,21 +52,23 @@
                             padding-left 4px
                             content ' \25bc'
                     ul.nav-dropdown
-                        background: white
+                        background: colors
                         list-style: none
                         position: absolute
                         display none
                         z-index: 1
                         border-radius 0 0 radius radius
                         li
-                            min-width 190px 
+                            min-width 190px
+                            &:hover
+                                background: white
+                                a, a:visited
+                                    color texts
                             a, a:visited
-                                color texts
+                                color white
                                 border-top none
                                 padding 15px
                                 line-height 20px
-                                &:hover
-                                    color colorp
 .header         
     .header-inner
         nav

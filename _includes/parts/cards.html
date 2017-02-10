@@ -1,22 +1,22 @@
 <section class="cards-group">
 	<ul class="cards center">
 		{% for post in site.tags.card limit:3  %}
-			<li class="inner-cards">
-				<div class="title-cards-group">
-					<i class="icon-cards fa fa-{{ post.icon }} {{ post.icon-class }}"></i>
-					<h2 class="title-cards">{{ post.title }}</h2>
-				</div>
-				<div class="content-cards-group">
-					<p>{{ post.excerpt }}</p>
-				</div>
-				<div class="btn-cards-group">
-					{% if post.link %}
-						<a class="btn btn-default btn-block btn-p saibamais-cards" href="{{ post.link }}"><i class="fa fa-plus"></i> </a>
-					{% else %}
-						<a class="btn btn-default btn-block btn-p saibamais-cards" href="{{ post.url }}"><i class="fa fa-plus"></i> </a>
-					{% endif %}
-				</div>
-			</li>
+		<li class="cards-inner">
+			<div class="cards-title-group">
+				<i class="cards-icon fa fa-{{ post.icon }}  card-icon-{% increment counter %}"></i>
+				<h2 class="cards-title">{{ post.title }}</h2>
+			</div>
+			<div class="cards-content-group">
+				<p>{{ post.excerpt }}</p>
+			</div>
+			<div class="cards-btn-group">
+				{% if post.link %}
+					<a class="btn btn-default btn-block btn-p cards-saibamais" href="{{ post.link }}"><i class="fa fa-plus"></i> </a>
+				{% else %}
+					<a class="btn btn-default btn-block btn-p cards-saibamais" href="{{ post.url }}"><i class="fa fa-plus"></i> </a>
+				{% endif %}
+			</div>
+		</li>
 		{% endfor %}
 	</ul>	
 </section>

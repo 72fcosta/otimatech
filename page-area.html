@@ -6,29 +6,16 @@ image: "area"
 
 <div class="center">
     <div class="page-content">
-        {% for post in site.tags.area-txt limit:1 %}
-        <div class="part part-txt">
+        {% include sidebar.html %}
+        <div class="sidemain">
+            {% for post in site.tags.area %}
             <h3 class="part-title">{{ post.title }}</h3>
             <div class="part-content">
-                {{ post.content }}
+                <div class="part-content-inner">
+                    {{ post.content }}
+                </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
-        {% for post in site.tags.area-img limit:1 %}
-        <div class="part part-img">
-            <h3 class="part-title">{{ post.title }}</h3>
-            <div class="part-content">
-                 <img src="/assets/img/{{ post.image }}.png" alt="Mapa da área de atendimento" />
-            </div>
-        </div>
-        {% endfor %}
-        {% for post in site.tags.area-locais limit:1 %}
-        <div class="part part-locais">
-            <h3 class="part-title">{{ post.title }}</h3>
-            <div class="part-content">
-                {{ post.content }}
-            </div>
-        </div>
-        {% endfor %}
     </div>
 </div>

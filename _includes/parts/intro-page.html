@@ -20,5 +20,9 @@
                 {%  endif %}
             {% endif %}
         {% endfor %}
+        {% if page.url == "/404.html" %}
+                    <h1 class="intro-page-title">Página não encontrada</h1>
+                    <p class="intro-page-description">A página solicitada não foi localizada.</p>
+        {% endif %}
     </div>
 </section>
