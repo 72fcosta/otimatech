@@ -9,7 +9,11 @@ image: "promocao"
         {% include sidebar.html %}
         <div class="sidemain">
             {% for post in site.tags.oferta limit:1 %}
-            <h3 class="part-title">{{ post.title }}</h3>
+            <div class="part-header">
+                <h3 class="part-title">{{ post.title }}</h3>
+                <h4 class="part-subtitle">{{ post.subtitle }}</h4>
+                <img class="part-img" src="/assets/img/{{ post.image }}" alt="" />
+            </div>
             <div class="part-content">
                 <div class="part-content-inner">
                     {{ post.content }}

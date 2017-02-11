@@ -7,7 +7,7 @@ var concatCss               = require("gulp-concat-css");
 var git                     = require("gulp-git");
 var googleWebFonts          = require("gulp-google-webfonts");
 var cp                      = require("child_process");//jekyll
-var imagemin                = require("gulp-image");
+var imagemin                = require("gulp-imagemin");
 //gulp-notify require sudo apt-get install libnotify-bin notify-osd no Lubuntu
 var notify                  = require("gulp-notify");
 var plumber                 = require("gulp-plumber");
@@ -168,8 +168,8 @@ gulp.task("clean", function() {
     return del(["assets/img/"]);
 });
 
-gulp.task("image", function() {
-    return gulp.src("_src/img/*.*")
+gulp.task("image", ["clean"], function() {
+    return gulp.src("_src/img/*")
     .pipe(imagemin())
     .pipe(gulp.dest("assets/img/"));
 });
@@ -253,7 +253,6 @@ gulp.task("reconstruir", function(callback) {
         "webfonts",
         "third-css",
         "third-js",
-        "clean",
         "image",
         "js",
         "fontawesome",

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Cupom de desconto"
+subtitle: "Receba em seu e-mail esse desconto exclusivo"
+image: "oferta.jpg"
 link: "/oferta.html"
 date: 2016-10-16 21:31:05
 tags:
