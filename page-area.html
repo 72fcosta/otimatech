@@ -9,7 +9,13 @@ image: "area"
         {% include sidebar.html %}
         <div class="sidemain">
             {% for post in site.tags.area %}
-            <h3 class="part-title">{{ post.title }}</h3>
+            <div class="part-header">
+                <h3 class="part-title">{{ post.title }}</h3>
+                <h4 class="part-subtitle">{{ post.subtitle }}</h4>
+                <div class="part-img">
+                    <img src="/assets/img/{{ post.image }}" alt="" />                    
+                </div>
+            </div>
             <div class="part-content">
                 <div class="part-content-inner">
                     {{ post.content }}

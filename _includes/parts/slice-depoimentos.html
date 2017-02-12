@@ -6,15 +6,15 @@
             {% for post in site.tags.depoimento limit:4  %}
             <div class="depoimento">
                 <div class="depoimento-img">
-                    <a href="{{ post.facebook }}" target="_blank">
-                        <img src="/assets/img/{{ post.image }}.jpg" alt="Rosto do {{ post.title }}" />
+                    <a href="{{ post.link }}" target="_blank">
+                        <img src="/assets/img/{{ post.image }}" alt="Rosto do {{ post.title }}" />
                     </a>
                 </div>
                 <div class="depoimento-txt">
                     {{ post.content }}
                 </div>
                 <div class="depoimento-nome">
-                    <i class="fa fa-facebook-official"></i> <a href="{{ post.facebook }}" target="_blank">{{ post.title }}</a>
+                    <i class="fa fa-facebook-official"></i> <a href="{{ post.link }}" target="_blank">{{ post.title }}</a>
                 </div>
             </div>
             {% endfor %}

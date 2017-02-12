@@ -1516,7 +1516,7 @@ h5 {
   width: calc(99.9% * 10/14 - (20px - 20px * 10/14));
   overflow: hidden;
   background: #fff;
-  padding: 40px 20px 20px 50px;
+  padding: 30px 20px 20px 50px;
   box-shadow: 0 0 1px 0 rgba(3,61,105,0.5);
   margin-bottom: 20px;
 }
@@ -1548,22 +1548,26 @@ h5 {
 .page .main .main-inner .page-content .sidemain .part-header .part-title i.fa {
   color: #b1dcfd;
 }
-.page .main .main-inner .page-content .sidemain .part-header .part-subtitle {
-  position: relative;
-  display: inline-block;
-  height: 30px;
-  line-height: 30px;
-  color: #fff;
-  margin: 0;
-  background: #cdd000;
-  padding: 0 8px;
-  z-index: 9;
-}
 .page .main .main-inner .page-content .sidemain .part-header .part-img {
   position: relative;
-  top: -30px;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 15px;
+}
+.page .main .main-inner .page-content .sidemain .part-header .part-img img {
   width: 100%;
   height: auto;
+}
+.page .main .main-inner .page-content .sidemain .part-header .part-img .part-subtitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  margin: 0;
+  background: rgba(0,0,0,0.5);
+  padding: 8px;
+  z-index: 9;
 }
 .page .main .main-inner .page-content .sidemain .part-content {
   overflow: hidden;

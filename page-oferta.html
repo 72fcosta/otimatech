@@ -11,8 +11,10 @@ image: "promocao"
             {% for post in site.tags.oferta limit:1 %}
             <div class="part-header">
                 <h3 class="part-title">{{ post.title }}</h3>
-                <h4 class="part-subtitle">{{ post.subtitle }}</h4>
-                <img class="part-img" src="/assets/img/{{ post.image }}" alt="" />
+                <div class="part-img">
+                    <img src="/assets/img/{{ post.image }}" alt="" />                    
+                    <h4 class="part-subtitle">{{ post.subtitle }}</h4>
+                </div>
             </div>
             <div class="part-content">
                 <div class="part-content-inner">

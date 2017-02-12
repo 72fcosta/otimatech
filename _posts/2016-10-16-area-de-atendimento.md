@@ -1,10 +1,13 @@
 ---
 layout: post
 title: "Área de Atendimento"
+subtitle: "Confira a cobertura de nossa rede"
+image: "area2.jpg"
 link: "/area.html"
 date: 2016-10-16 21:31:05
 tags:
 - "card"
+- area
 icon: "map-o"
 excerpt_separator: <!--more-->
 ---
