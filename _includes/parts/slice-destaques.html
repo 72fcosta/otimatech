@@ -6,9 +6,9 @@
 			{% for post in site.tags.destaque limit:4  %}
 			<div class="destaque">
 				<div class="destaque-rear">
-					<img class="destaque-img" src="/assets/img/{{ post.image }}.jpg" alt="Imagem ilustrativa para {{ post.title }}" />
+					<img class="destaque-img" src="/assets/img/{{ post.image }}" alt="Imagem ilustrativa para {{ post.title }}" />
 				</div>
-				<div class="destaque-front">
+				<div class="destaque-front destaque-{{ post.css }}">
 					<h3 class="destaque-title">{{ post.title }}</h3>
 					<a class="btn bnt-default btn-t" href="{{ post.link }}">SAIBA <i class="fa fa-plus"></i></a>
 				</div>

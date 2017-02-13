@@ -14,14 +14,17 @@ razao_social: "Rede Telenew Eireli ME - CNPJ 15.065.705/0001-64"
 header_title: Olá, somos a Rede Telenew.
 header_description: A internet que você precisa!
 
-slice_destaques_title: Lorem
-slice_destaques_description: Lorem ipsum dolor sit amet, consectetur adipisicing!
+slice_destaques_title: Planos
+slice_destaques_description: Internet via rádio e agora também por fibra!
+
+slice_price-table_title: Planos
+slice_price-table_description: Internet via rádio e agora também por fibra!
 
 slice_depoimentos_title: Depoimentos
 slice_depoimentos_description: Veja o que os nossos clientes tem a dizer.
 
 slice_newsletter_title: Lançamentos e promoções
-slice_newsletter_description: Receba em seu e-mail todos nossos lançamentos e promoções.
+slice_newsletter_description: Receba antes em seu e-mail nossos lançamentos e promoções.
 
 telefone: (XX) XXXXX-XXXX
 whatsapp: (XX) XXXXX-XXXX
@@ -47,7 +50,7 @@ links:
     top_url: "#!/"
     nested:
       - sub_title: Planos
-        sub_url: "/produtos.html"
+        sub_url: "/planos.html"
         sub_intro: "Planos sob medida pra você!"
   - top_title: Promoção
     top_url: "/oferta.html"
