@@ -2068,6 +2068,12 @@ h5 {
   width: calc(99.9% * 7/10 - (20px - 20px * 7/10));
   overflow: hidden;
   height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .slice.depoimentos .depoimentos-main .depoimento .depoimento-txt:nth-child(1n) {
   float: left;
