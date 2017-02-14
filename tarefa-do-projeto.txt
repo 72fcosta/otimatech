@@ -1,0 +1,3 @@
+layout desktop
+escrever no blog
+layout mobile
