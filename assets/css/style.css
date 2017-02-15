@@ -1725,8 +1725,7 @@ h5 {
   width: 100%;
 }
 .intro-page .intro-page-img img,
-.intro-style,
-.intro-style-2 {
+.intro-style {
   display: block;
   width: 100%;
   height: 210px;
@@ -1735,7 +1734,6 @@ h5 {
 }
 .intro-page .intro-page-inner {
   height: 210px;
-  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1755,17 +1753,13 @@ h5 {
 }
 .intro-page .intro-page-inner .intro-page-title {
   font-size: 50px;
+  line-height: 48px;
   font-weight: 700;
 }
 .intro-page .intro-page-inner .intro-page-description {
-  font-size: 20px;
+  font-size: 18px;
 }
 .intro-style {
-  position: absolute;
-  border-left: 15px dashed #033d69;
-  border-right: 15px dashed #033d69;
-}
-.intro-style-2 {
   position: absolute;
   background: rgba(3,61,105,0.8);
 }
