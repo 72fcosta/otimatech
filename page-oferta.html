@@ -4,34 +4,27 @@ permalink: /oferta.html
 image: "promocao"
 ---
 
-<div class="center">
-    <div class="page-content">
-        {% include sidebar.html %}
-        <div class="sidemain">
-            {% for post in site.tags.oferta limit:1 %}
-            <div class="part-header">
-                <h3 class="part-title">{{ post.title }}</h3>
-                <div class="part-img">
-                    <img src="/assets/img/{{ post.image }}" alt="" />                    
-                    <h4 class="part-subtitle">{{ post.subtitle }}</h4>
-                </div>
-            </div>
-            <div class="part-content">
-                <div class="part-content-inner">
-                    {{ post.content }}
-                    <form id="form-newsletter" class="form-inline" method="post" action="https://madmimi.com/signups/subscribe/{{ site.madmimi }}">
-                        <label class="sr-only" for="signup[email]">Email address</label>
-                        <input type="hidden" name="utf8" value="✓" />
-                        <div class="input-group input-group-lg">
-                            <input class="form-control" name="signup[email]" type="text" placeholder="Digite aqui seu e-mail" />
-                            <span class="input-group-btn">
-                                <button type="submit" class="oferta-btn btn btn-default btn-p"> <i class="fa fa-angle-double-right"></i></button>
-                            </span>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
+{% for post in site.tags.oferta limit:1 %}
+<div class="part-header">
+    <h3 class="part-title">{{ post.title }}</h3>
+    <div class="part-img">
+        <img src="/assets/img/{{ post.image }}" alt="" />                    
+        <h4 class="part-subtitle">{{ post.subtitle }}</h4>
     </div>
 </div>
+<div class="part-content">
+    <div class="part-content-inner">
+        {{ post.content }}
+        <form id="form-newsletter" class="form-inline" method="post" action="https://madmimi.com/signups/subscribe/{{ site.madmimi }}">
+            <label class="sr-only" for="signup[email]">Email address</label>
+            <input type="hidden" name="utf8" value="✓" />
+            <div class="input-group input-group-lg">
+                <input class="form-control" name="signup[email]" type="text" placeholder="Digite aqui seu e-mail" />
+                <span class="input-group-btn">
+                    <button type="submit" class="oferta-btn btn btn-default btn-p"> <i class="fa fa-angle-double-right"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+{% endfor %}

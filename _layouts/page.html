@@ -6,7 +6,14 @@
     {% include parts/intro-page.html %}
     <section class="main">
         <div class="main-inner">
-            {{ content }}
+            <div class="center">
+                <div class="page-content">
+                   {% include sidebar.html %}
+                   <div class="sidemain">
+                       {{ content }}
+                   </div>
+                </div>
+            </div>
         </div>
     </section>
     {% include modals/contrato.html %}

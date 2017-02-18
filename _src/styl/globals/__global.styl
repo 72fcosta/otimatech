@@ -54,7 +54,36 @@ a[href^=tel]e
 a:focus
     outline: none!important
 
+//BOOTSTRAP CAROUSEL
+ 
+//remover sombras laterais do carousel
+.carousel-control.left, .carousel-control.right
+    background: none!important
+    outline: 0
 
+//ajuste horizontal das setinhas 
+.carousel-control.left
+    left -90px
+.carousel-control.right
+    right -90px
+
+//posicionar setinhas do slider no centro vertical, caso trocar os icones de glyphicon para outro qualquer
+.carousel, .carousel-inner, carousel-control
+    height 100%
+
+.carousel-control
+    width 60px
+    display flex
+    align-items center
+    justify-content center
+    opacity: 1!important
+    
+//propriedades das setinhas
+.carousel-control .fa
+    font-size: 60px
+    color white
+    text-shadow: none
+    
 .postfix.button, .prefix.button
     text-align: center!important
 

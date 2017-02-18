@@ -15,16 +15,6 @@
                     box-shadow 0 0 1px 0 rgba(colors, .5)
                     margin-bottom 20px
                     .part-header
-                        .part-title:first-child
-                            margin-top 0
-                        .part-title
-                            color colors
-                            font-weight: bold
-                            text-align: left
-                            text-transform: uppercase
-                            margin 15px 0
-                            i.fa
-                                color colors + 80%
                         .part-img
                             position: relative
                             overflow: hidden
@@ -33,18 +23,25 @@
                             margin-bottom: 15px
                             img
                                 width 100%
-                                height auto                                
-                            .part-subtitle  
+                                height auto
+                            .part-subtitle
                                 position: absolute
-                                top 0
-                                left 0
+                                bottom 0
+                                right 0
                                 color white
                                 margin 0
-                                background: rgba(black, 0.5)
-                                padding: 8px
+                                background: colors
+                                padding: 8px 13px
                                 z-index 9
                     .part-content
                         overflow: hidden
                         background: white
                         lost-utility clearfix
+                        .part-title:first-child
+                            margin-top 0
+                        .part-title
+                            text-align: left
+                            margin-bottom: 15px
+                            i.fa
+                                color cinza
     

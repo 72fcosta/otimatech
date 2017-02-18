@@ -84,6 +84,40 @@ a[href^=tel]e {
 a:focus {
   outline: none !important;
 }
+.carousel-control.left,
+.carousel-control.right {
+  background: none !important;
+  outline: 0;
+}
+.carousel-control.left {
+  left: -90px;
+}
+.carousel-control.right {
+  right: -90px;
+}
+.carousel,
+.carousel-inner,
+carousel-control {
+  height: 100%;
+}
+.carousel-control {
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 1 !important;
+}
+.carousel-control .fa {
+  font-size: 60px;
+  color: #fff;
+  text-shadow: none;
+}
 .postfix.button,
 .prefix.button {
   text-align: center !important;
@@ -1535,19 +1569,6 @@ h5 {
 .page .main .main-inner .page-content .sidemain:nth-child(2n + 1) {
   clear: both;
 }
-.page .main .main-inner .page-content .sidemain .part-header .part-title:first-child {
-  margin-top: 0;
-}
-.page .main .main-inner .page-content .sidemain .part-header .part-title {
-  color: #033d69;
-  font-weight: bold;
-  text-align: left;
-  text-transform: uppercase;
-  margin: 15px 0;
-}
-.page .main .main-inner .page-content .sidemain .part-header .part-title i.fa {
-  color: #b1dcfd;
-}
 .page .main .main-inner .page-content .sidemain .part-header .part-img {
   position: relative;
   overflow: hidden;
@@ -1561,12 +1582,12 @@ h5 {
 }
 .page .main .main-inner .page-content .sidemain .part-header .part-img .part-subtitle {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  right: 0;
   color: #fff;
   margin: 0;
-  background: rgba(0,0,0,0.5);
-  padding: 8px;
+  background: #033d69;
+  padding: 8px 13px;
   z-index: 9;
 }
 .page .main .main-inner .page-content .sidemain .part-content {
@@ -1581,6 +1602,16 @@ h5 {
   content: '';
   display: table;
   clear: both;
+}
+.page .main .main-inner .page-content .sidemain .part-content .part-title:first-child {
+  margin-top: 0;
+}
+.page .main .main-inner .page-content .sidemain .part-content .part-title {
+  text-align: left;
+  margin-bottom: 15px;
+}
+.page .main .main-inner .page-content .sidemain .part-content .part-title i.fa {
+  color: #efefef;
 }
 @media only screen and (max-width: 800px) {
   .page .main .main-inner {
@@ -2216,6 +2247,7 @@ h5 {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  height: 323px;
 }
 .slice.price-table .price-table-main:before {
   content: '';

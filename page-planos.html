@@ -1,16 +1,20 @@
 ---
 layout: page
-title: "Pro"
 permalink: /planos.html
 image: "intro-page"
 ---
 
-<div class="center">
-    <div class="page-content">
-    {% for post in site.tags.destaque %}
-        <div class="part">
-            <h3 class="part-title"><i class="fa fa-{{ post.icon }}"></i> {{ post.title }}</h3>
-            {{  post.content }}
-        </div>
-        {% endfor %}
+{% for post in site.tags.planos %}
+<div class="part-header">
+    <div class="part-img">
+        <img src="/assets/img/{{ post.image }}" alt="" />
+        <h4 class="part-subtitle">{{ post.subtitle }}</h4>
     </div>
+</div>
+<div class="part-content">
+    <div class="part-content-inner">   
+        <h3 class="part-title"><i class="fa fa-{{ post.icon }}"></i> {{ post.title }}</h3>
+        {{  post.content }} 
+    </div>   
+</div>
+{% endfor %}

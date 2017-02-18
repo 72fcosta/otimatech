@@ -5,7 +5,7 @@ link: "/planos.html"
 image: "radio.jpg"
 css: fibra
 tags:
-- price-table
+- price-radio
 velocidade: 1
 upload: 1
 tipo: Rádio
