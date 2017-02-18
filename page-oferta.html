@@ -1,19 +1,20 @@
 ---
 layout: page
 permalink: /oferta.html
-image: "promocao"
+image: promocao.jpg
+icon: ticket
 ---
 
 {% for post in site.tags.oferta limit:1 %}
 <div class="part-header">
-    <h3 class="part-title">{{ post.title }}</h3>
     <div class="part-img">
-        <img src="/assets/img/{{ post.image }}" alt="" />                    
+        <img src="/assets/img/{{ post.image }}" alt="" />
         <h4 class="part-subtitle">{{ post.subtitle }}</h4>
     </div>
 </div>
 <div class="part-content">
     <div class="part-content-inner">
+        <h3 class="part-title"><i class="fa fa-{{ page.icon }}"></i> {{ post.title }}</h3>
         {{ post.content }}
         <form id="form-newsletter" class="form-inline" method="post" action="https://madmimi.com/signups/subscribe/{{ site.madmimi }}">
             <label class="sr-only" for="signup[email]">Email address</label>

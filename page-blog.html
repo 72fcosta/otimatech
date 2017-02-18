@@ -1,12 +1,19 @@
 ---
 layout: page
 permalink: /blog.html
-image: "blog"
+image: blog.jpg
+icon: pencil
 ---
 
-<div class="center">
-    <div class="page-content">
-        {% for post in site.categories.blog %}
+{% for post in site.categories.blog %}
+<div class="part-header">
+    <div class="part-img">
+        <img src="/assets/img/{{ post.image }}" alt="" />
+        <h4 class="part-subtitle">{{ post.subtitle }}</h4>
+    </div>
+</div>
+<div class="part-content">
+    <div class="part-content-inner">
         <div class="part">
             <div class="part-rear">
                 <img class="part-img" src="/assets/img/{{ post.image }}.jpg" alt="Ilustração sobre {{ post.title }}" />
@@ -20,6 +27,6 @@ image: "blog"
                 <a class="part-link" href="{{ post.url }}">{{ post.intro }}</a>
             </div>
         </div>
-        {% endfor %}
     </div>
 </div>
+{% endfor %}

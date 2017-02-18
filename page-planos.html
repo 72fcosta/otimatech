@@ -1,7 +1,8 @@
 ---
 layout: page
 permalink: /planos.html
-image: "intro-page"
+image: intro-page.jpg
+icon: quote-left
 ---
 
 {% for post in site.tags.planos %}
@@ -13,7 +14,7 @@ image: "intro-page"
 </div>
 <div class="part-content">
     <div class="part-content-inner">   
-        <h3 class="part-title"><i class="fa fa-{{ post.icon }}"></i> {{ post.title }}</h3>
+        <h3 class="part-title"><i class="fa fa-{{ page.icon }}"></i> {{ post.title }}</h3>
         {{  post.content }} 
     </div>   
 </div>

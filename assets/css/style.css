@@ -1603,15 +1603,15 @@ h5 {
   display: table;
   clear: both;
 }
-.page .main .main-inner .page-content .sidemain .part-content .part-title:first-child {
-  margin-top: 0;
-}
 .page .main .main-inner .page-content .sidemain .part-content .part-title {
   text-align: left;
-  margin-bottom: 15px;
+  margin: 20px 0 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #cdd000;
 }
 .page .main .main-inner .page-content .sidemain .part-content .part-title i.fa {
-  color: #efefef;
+  color: #cdd000;
+  margin-right: 5px;
 }
 @media only screen and (max-width: 800px) {
   .page .main .main-inner {

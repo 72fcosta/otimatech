@@ -8,7 +8,6 @@ date: 2016-10-16
 tags:
 - oferta
 - card
-icon: "ticket"
 excerpt_separator: <!--more-->
 ---
 
