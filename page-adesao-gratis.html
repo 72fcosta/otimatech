@@ -1,11 +1,11 @@
 ---
 layout: page-two-column
-permalink: /planos.html
-image: intro-page.jpg
-icon: quote-left
+permalink: /adesao-gratis.html
+image: promocao.jpg
+icon: ticket
 ---
 
-{% for post in site.tags.planos %}
+{% for post in site.tags.adesao %}
 <div class="part-header">
     <div class="part-img">
         <img src="/assets/img/{{ post.image }}" alt="" />
@@ -13,9 +13,9 @@ icon: quote-left
     </div>
 </div>
 <div class="part-content">
-    <div class="part-content-inner">   
+    <div class="part-content-inner">
         <h3 class="part-title"><i class="fa fa-{{ page.icon }}"></i> {{ post.title }}</h3>
-        {{  post.content }} 
-    </div>   
+        {{ post.content }}
+    </div>
 </div>
 {% endfor %}

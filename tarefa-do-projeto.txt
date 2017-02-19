@@ -1,3 +1,2 @@
-layout desktop
-escrever no blog
 layout mobile
+escrever no blog

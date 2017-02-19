@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 {% include head.html %}
-<body class="page {% if page.permalink == '/404.html' %}{{ 'error404' }}{% else %}{{ page.permalink | remove: '/' | remove: '.html' }}{% endif %}">
+<body class="page page-two-column {% if page.permalink == '/404.html' %}{{ 'error404' }}{% else %}{{ page.permalink | remove: '/' | remove: '.html' }}{% endif %}">
     {% include header.html %}
     {% include parts/intro-page.html %}
-    <section class="main">
-        <div class="main-inner">
+    <section class="content">
+        <div class="content-inner">
             <div class="center">
                 <div class="page-content">
                    {% include sidebar.html %}
-                   <div class="sidemain">
+                   <div class="main">
                        {{ content }}
                    </div>
                 </div>

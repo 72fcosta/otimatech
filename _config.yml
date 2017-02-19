@@ -52,9 +52,15 @@ links:
       - sub_title: Planos
         sub_url: "/planos.html"
         sub_intro: "Planos sob medida pra você!"
-  - top_title: Promoção
-    top_url: "/oferta.html"
-    top_intro: "Cupons exclusivos de descontos!"
+  - top_title: Promoções
+    top_url: "#!/"
+    nested:
+      - sub_title: Cupons
+        sub_url: "/cupons.html"
+        sub_intro: "Cupons exclusivos de descontos!"
+      - sub_title: Adesão Grátis
+        sub_url: "/adesao-gratis.html"
+        sub_intro: "Não pague a taxa de adesão. Confira as regras."
   - top_title: Área
     top_url: "/area.html"
     top_intro: "Nossa área de cobertura."

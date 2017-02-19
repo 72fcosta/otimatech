@@ -3,37 +3,18 @@
 		<h2 class="slice-title price-table-title">{{ site.slice_price-table_title }}</h2>
 		<p class="slice-subtitle price-table-subtitle">{{ site.slice_price-table_description }}</p>
 		<div class="price-table-main">
-			<div id="carousel-price" class="carousel slide" data-interval="false">
-				<div class="carousel-inner">
-					<div class="item active">
-						{% for post in site.tags.price-radio %}
-						<ul class="price">
-							<li class="price-velocidade {{ post.tipo | slugify }}">{{ post.velocidade }}<p>MEGA</p></li>
-							<li class="price-field"><small>DOWNLOAD</small> {{ post.velocidade }} Mbps</li>
-							<li class="price-field"><small>UPLOAD</small> {{ post.upload }} Mbps</li>
-							<li class="price-field"><small>CONEXÃO</small> {{ post.tipo }}</li>
-							<li class="price-btn"><a class="btn btn-default btn-s" href="/planos.html"><i class="fa fa-plus"></i>  Saiba Mais</a></li>
-						</ul>
-						{% endfor %}
-					</div>
-					<div class="item">
-						{% for post in site.tags.price-fibra %}
-						<ul class="price">
-							<li class="price-velocidade {{ post.tipo | slugify }}">{{ post.velocidade }}<p>MEGA</p></li>
-							<li class="price-field"><small>DOWNLOAD</small> {{ post.velocidade }} Mbps</li>
-							<li class="price-field"><small>UPLOAD</small> {{ post.upload }} Mbps</li>
-							<li class="price-field"><small>CONEXÃO</small> {{ post.tipo }}</li>
-							<li class="price-btn"><a class="btn btn-default btn-s" href="/planos.html"><i class="fa fa-plus"></i>  Saiba Mais</a></li>
-						</ul>						
-						{% endfor %}							
-					</div>
+			<div id="carousel-price">
+				{% for post in site.tags.price %}
+				<div class="item">
+					<ul class="price">
+						<li class="price-velocidade {{ post.tipo | slugify }}">{{ post.velocidade }}<p>MEGA</p></li>
+						<li class="price-field"><small>DOWNLOAD</small> {{ post.velocidade }} Mbps</li>
+						<li class="price-field"><small>UPLOAD</small> {{ post.upload }} Mbps</li>
+						<li class="price-field"><small>CONEXÃO</small> {{ post.tipo }}</li>
+						<li class="price-btn"><a class="btn btn-default btn-s" href="/planos.html"><i class="fa fa-plus"></i>  Saiba Mais</a></li>
+					</ul>
 				</div>
-				<a rel="nofollow" rel="noreferrer" class="carousel-control left" href="#carousel-price" data-slide="prev">
-					<i class="fa fa-chevron-left" aria-hidden="true"></i>
-				</a>
-				<a rel="nofollow" rel="noreferrer" class="carousel-control right" href="#carousel-price" data-slide="next">
-					<i class="fa fa-chevron-right" aria-hidden="true"></i>
-				</a>					
+				{% endfor %}		
 			</div>
 		</div>
 	</div>

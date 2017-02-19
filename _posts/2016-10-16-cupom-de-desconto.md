@@ -1,13 +1,13 @@
 ---
-layout: post
 title: "Cupom de desconto"
 subtitle: "Receba em seu e-mail esse desconto exclusivo"
 image: "promocao2.jpg"
-link: "/oferta.html"
+link: "/cupons.html"
 date: 2016-10-16
 tags:
 - oferta
 - card
+icon: "ticket"
 excerpt_separator: <!--more-->
 ---
 
