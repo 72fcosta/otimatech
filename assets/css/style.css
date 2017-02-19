@@ -1098,62 +1098,59 @@ h5 {
   float: right;
 }
 @media only screen and (max-width: 800px) {
-  .page.contato .page-content .sidemain form .form-inner .form-side {
+  .page.contato .page-content .main form .form-inner .form-side {
     width: calc(99.9% * 1/1 - (20px - 20px * 1/1));
   }
-  .page.contato .page-content .sidemain form .form-inner .form-side:nth-child(1n) {
+  .page.contato .page-content .main form .form-inner .form-side:nth-child(1n) {
     float: left;
     margin-right: 20px;
     clear: none;
   }
-  .page.contato .page-content .sidemain form .form-inner .form-side:last-child {
+  .page.contato .page-content .main form .form-inner .form-side:last-child {
     margin-right: 0;
   }
-  .page.contato .page-content .sidemain form .form-inner .form-side:nth-child(1n) {
+  .page.contato .page-content .main form .form-inner .form-side:nth-child(1n) {
     margin-right: 0;
     float: right;
   }
-  .page.contato .page-content .sidemain form .form-inner .form-side:nth-child(1n + 1) {
+  .page.contato .page-content .main form .form-inner .form-side:nth-child(1n + 1) {
     clear: both;
   }
-  .page.contato .page-content .sidemain form .form-inner .form-side .form-group .control-label {
+  .page.contato .page-content .main form .form-inner .form-side .form-group .control-label {
     width: calc(99.9% * 1/1 - (20px - 20px * 1/1));
   }
-  .page.contato .page-content .sidemain form .form-inner .form-side .form-group .control-label:nth-child(1n) {
+  .page.contato .page-content .main form .form-inner .form-side .form-group .control-label:nth-child(1n) {
     float: left;
     margin-right: 20px;
     clear: none;
   }
-  .page.contato .page-content .sidemain form .form-inner .form-side .form-group .control-label:last-child {
+  .page.contato .page-content .main form .form-inner .form-side .form-group .control-label:last-child {
     margin-right: 0;
   }
-  .page.contato .page-content .sidemain form .form-inner .form-side .form-group .control-label:nth-child(1n) {
+  .page.contato .page-content .main form .form-inner .form-side .form-group .control-label:nth-child(1n) {
     margin-right: 0;
     float: right;
   }
-  .page.contato .page-content .sidemain form .form-inner .form-side .form-group .control-label:nth-child(1n + 1) {
+  .page.contato .page-content .main form .form-inner .form-side .form-group .control-label:nth-child(1n + 1) {
     clear: both;
   }
-  .page.contato .page-content .sidemain form .form-inner .form-side .form-group .input-group {
+  .page.contato .page-content .main form .form-inner .form-side .form-group .input-group {
     width: calc(99.9% * 1/1 - (20px - 20px * 1/1));
   }
-  .page.contato .page-content .sidemain form .form-inner .form-side .form-group .input-group:nth-child(1n) {
+  .page.contato .page-content .main form .form-inner .form-side .form-group .input-group:nth-child(1n) {
     float: left;
     margin-right: 20px;
     clear: none;
   }
-  .page.contato .page-content .sidemain form .form-inner .form-side .form-group .input-group:last-child {
+  .page.contato .page-content .main form .form-inner .form-side .form-group .input-group:last-child {
     margin-right: 0;
   }
-  .page.contato .page-content .sidemain form .form-inner .form-side .form-group .input-group:nth-child(1n) {
+  .page.contato .page-content .main form .form-inner .form-side .form-group .input-group:nth-child(1n) {
     margin-right: 0;
     float: right;
   }
-  .page.contato .page-content .sidemain form .form-inner .form-side .form-group .input-group:nth-child(1n + 1) {
+  .page.contato .page-content .main form .form-inner .form-side .form-group .input-group:nth-child(1n + 1) {
     clear: both;
-  }
-  .page.contato .page-content .sidemain form .btn {
-    margin-bottom: 20px;
   }
 }
 .page.sobre .page-content .main .part-content .part-content-inner {
