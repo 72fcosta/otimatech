@@ -3,7 +3,7 @@
 {% include head.html %}
 <body class="post">
     {% include header.html %}
-    {% include parts/intro-page.html %}
+    {% include parts/intro-post.html %}
     <section class="content">
         <div class="content-inner">
             <div class="center">
@@ -11,13 +11,16 @@
                     {% include sidebar.html %}
                     <div class="main">
                         <div class="part-header">
+                            <h3 class="part-title">{{ page.title }}</h3>
+                            <div class="part-img">
+                                <img src="/assets/img/{{ page.image }}" alt="" />
+                            </div>
                         </div>
                         <div class="part-content">
                             <div class="part-content-inner">
-                                <div class="part-title">
-                                </div>
                                 {{ content }}
                             </div>
+                            {% include parts/share.html %}
                         </div>
                     </div>
                 </div>

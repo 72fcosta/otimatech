@@ -1,11 +1,32 @@
+img-prop-blog=.75
 .page.blog
+    +below(1200px)
+        .content
+            .content-inner
+                .page-content
+                    .main
+                        .part
+                            lost-column 1/1 1
     +below(800px)
-        .page-content
-            .part
-                lost-column 1/1 1
-                height auto
-                .part-rear
-                .part-front
-                    height 200px
-                .part-intro
-                    height auto
+        .content
+            .content-inner
+                .page-content
+                    .main
+                        padding-top: 35px
+    +below(400px)
+        .content
+            .content-inner
+                .page-content
+                    .main
+                        .part
+                            .part-rear
+                                width img-width-blog*img-prop-blog
+                                height img-height-blog*img-prop-blog+90px
+                                .part-img
+                                    width img-width-blog*img-prop-blog
+                                    height img-height-blog*img-prop-blog
+                            .part-front
+                                width img-width-blog*img-prop-blog
+                                height img-height-blog*img-prop-blog
+                            .part-intro
+                                width img-width-blog*img-prop-blog

@@ -1,56 +1,48 @@
+img-width-blog=380px
+img-height-blog=280px
+img-prop-blog=1
 .page.blog
-    .page-content
-        .part
-            position: relative
-            overflow: hidden
-            lost-column 1/3 3
-            height 378px
-            padding: 0
-            border 14px solid white
-            box-shadow 0 0 1px 0 rgba(colors, .5)
-            text-align: center
-            border-radius radius
-            .part-rear
-                position: absolute
-                top 0
-                left 0
-                display flex
-                justify-content center
-                width 100%
-                height 240px
-                z-index 9
-                .part-img
-                    width 100%
-                    height auto
-            .part-front
-                position: relative
-                width 100%
-                height 240px
-                z-index 99
-                display flex
-                align-items center
-                justify-content center
-                border 4px solid colors
-                &:hover
-                    border-color colors + 50%
-                    text-decoration none
-                .part-title
-                    color colorp
-                    padding 10px 20px 
-                    border-radius radius
-                    background: rgba(white, .9)
-                    margin 0
-            .part-intro
-                width 100%
-                background: colors
-                text-align: left
-                overflow: hidden
-                bottom: 0
-                left 0
-                padding 15px
-                a.part-link
-                    font-size: 15px
-                    line-height: 19px
-                    font-weight: bold
-                    color white
-                    text-decoration: none
+    .content
+        .content-inner
+            .page-content
+                .main
+                    display block
+                    padding-left: 20px
+                    lost-utility clearfix
+                    .part
+                        lost-column 1/2 2
+                        .part-rear
+                            position: relative
+                            margin 0 auto
+                            background: colors
+                            width img-width-blog*img-prop-blog
+                            height img-height-blog*img-prop-blog+90px
+                            margin-bottom: 25px
+                            .part-img
+                                width img-width-blog*img-prop-blog
+                                height img-height-blog*img-prop-blog
+                        .part-front
+                            position: absolute
+                            top 0
+                            left 0
+                            width img-width-blog*img-prop-blog
+                            height img-height-blog*img-prop-blog
+                            .part-title
+                                position absolute
+                                top 0
+                                left 0
+                                display block
+                                width 100%
+                                color colors
+                                padding 10px 20px 
+                                background: rgba(white, .9)
+                        .part-intro
+                            width img-width-blog*img-prop-blog
+                            text-align: left
+                            overflow: hidden
+                            padding 15px
+                            a.part-link
+                                font-size: 15px
+                                line-height: 19px
+                                font-weight: bold
+                                color white

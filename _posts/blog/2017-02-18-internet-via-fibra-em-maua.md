@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Internet via fibra em Mauá
+subtitle: Conheça mais sobre essa tecnologia
 date: 2017-02-18
 image: "fibra.jpg"
 categories:
@@ -11,23 +12,22 @@ tags:
 excerpt_separator: <!--more-->
 ---
 
-**Internet via fibra em Mauá**
-
-Mauá agora tem uma nova opção de conexão de internet via fibra. Rede Telenew chegou para oferecer mais qualidade a um preço justo para se conectar a Internet pela tecnologia mais recente de fibras óticas em Mauá – SP.
+Mauá agora tem uma nova opção de conexão de internet via fibra.
 <!--more-->
+**Rede Telenew** chegou para oferecer mais qualidade a um preço justo para se conectar a Internet pela tecnologia mais recente de fibras óticas em Mauá – SP.
 
-5 coisas que você precisa saber sobre este tipo de conexão;
+**5 coisas que você precisa saber sobre a fibra ótica**
 
-* 1. A tecnologia em torno de fibra óptica tem sido em torno desde a década de 1870. A primeira introdução de cabos de fibra ótica real começou a aparecer na década de 1950. Esta é uma tecnologia enraizada na história sólida. 
+1. A tecnologia de fibra ótica tem sido desenvolvida desde 1870. Os primeiros usos reais de cabos de fibra ótica começaram a aparecer na década de 1950.
 
-* 2. Fibra Óptica usa luz - Não há corrente elétrica sendo passada através de cabos de fibra óptica, apenas a luz. Devido a isso, não há calor e nenhum calor significa que não há queima e não há riscos de incêndio. Durante o uso normal, a fibra óptica é a opção mais segura para a transmissão de dados.
+2. Fibra ótica usa luz. Não há corrente elétrica passando através dos cabos de fibra ótica, apenas a luz. Devido a isso, não há calor e como não há calor também não há aquecimento, portanto sem riscos de incêndio. Durante o uso normal, a fibra ótica é a opção mais segura para a transmissão de dados.
 
-* 3. Fibra óptica são rápidas - Os dados podem ser transmitidos através de cabos de fibra óptica mais rápido do que o cabeamento tradicional devido ao aumento da capacidade. Neste momento, os usos comerciais de cabeamento de fibra óptica podem transmitir 10-80 Gigabits por segundo em apenas um canal. Segundo relatos, o recorde atual é de 15,5 Terabits por segundo em uma distância de 7.000km. Para colocar isso em perspectiva, isso equivale a 10,3 milhões de conexões DSL.
+3. Fibra ótica é muito rápida. Os dados podem ser transmitidos através de cabos de fibra ótica mais rápido do que o cabeamento tradicional. Neste momento, os usos comerciais de cabeamento de fibra ótica podem transmitir 10-80 Gigabits por segundo em apenas um canal. Segundo relatos, o recorde atual é de 15,5 Terabits por segundo em uma distância de 7.000km. Para colocar isso em perspectiva, isso equivale a 10,3 milhões de conexões DSL.
 
-* 4. Fibra Óptica têm muitos usos - a partir do uso tradicional de transmissão de dados, fibras ópticas têm crescido em seu uso. Agora, eles são usados ​​com mira arma, óptica de imagem, espectroscopia, fornecimento de baixos níveis de energia, sinais, arte e até mesmo árvores de Natal artificiais.
+4. Fibra ótica têm outros usos. A partir do uso tradicional de transmissão de dados, fibras óticas têm crescido muito no que diz respeito ao seu uso. Agora, eles são usados ​​tambpem como mira de arma, espetroscopia, fornecimento de baixos níveis de energia, sinais, artes e até mesmo árvores de natal artificiais.
 
-* 5. Fibra Óptica são Verde - A quantidade de energia necessária para enviar um flash de luz através de uma distância em cabos de fibra óptica é muito menor do que a necessária para enviar sinais elétricos. Menos energia significa menos emissão de carbono, menores emissões e preços mais baixos.
+5. Fibra ótica não agride a natureza. A quantidade de energia necessária para enviar um flash de luz através de uma distância, em cabos de fibra ótica é muito menor do que a necessária para enviar sinais elétricos. Menos energia significa menos emissão de carbono.
 
-É isso não perca mais tempo com tecnologias antigas de conexão. Peça agora mesmo sua nova conexão a fibra.
+É isso! Agora que você já sabe um pouco mais sobre esta tecnologia, aproveite para usá-la em sua conexão de Internet. [Peça](/contato.html) agora mesmo sua nova conexão a fibra à **Rede Telenew**.
 
-Consulte aqui a disponiblidade no seu bairro.
+Consulte [aqui](/area.html) a disponiblidade no seu bairro.

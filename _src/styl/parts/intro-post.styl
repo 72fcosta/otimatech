@@ -1,0 +1,32 @@
+.intro-post
+    padding-top nav-height
+    overflow: hidden
+    .intro-post-img
+        position absolute
+        width 100%
+        img
+            display block
+            width 100%
+            height 210px
+            object-fit cover
+    .intro-post-inner
+        height 210px
+        display flex
+        flex-direction column
+        justify-content center
+        .intro-post-title, .intro-post-description
+            position relative
+            color white
+            margin 0
+        .intro-post-title
+            font-size: 50px
+            line-height: 48px
+            font-weight: 700
+        .intro-post-description
+            font-size: 18px
+            
+if intro-style
+    .intro-style
+        @extend .intro-post .intro-post-img img
+        position: absolute
+        background: rgba(colors, .8)
