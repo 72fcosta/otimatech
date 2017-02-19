@@ -1377,36 +1377,33 @@ h5 {
   margin-right: 5px;
 }
 @media only screen and (max-width: 800px) {
-  .page-two-columns .main .main-inner {
+  .page-two-column .content .content-inner {
     padding: 0;
   }
-  .page-two-columns .main .main-inner .page-content .sidebar {
+  .page-two-column .content .content-inner .page-content .sidebar {
     display: none;
   }
-  .page-two-columns .main .main-inner .page-content .sidemain {
+  .page-two-column .content .content-inner .page-content .main {
     width: calc(99.9% * 1/1 - (20px - 20px * 1/1));
-    padding: 0;
+    padding: 0 20px 20px;
   }
-  .page-two-columns .main .main-inner .page-content .sidemain:nth-child(1n) {
+  .page-two-column .content .content-inner .page-content .main:nth-child(1n) {
     float: left;
     margin-right: 20px;
     clear: none;
   }
-  .page-two-columns .main .main-inner .page-content .sidemain:last-child {
+  .page-two-column .content .content-inner .page-content .main:last-child {
     margin-right: 0;
   }
-  .page-two-columns .main .main-inner .page-content .sidemain:nth-child(1n) {
+  .page-two-column .content .content-inner .page-content .main:nth-child(1n) {
     margin-right: 0;
     float: right;
   }
-  .page-two-columns .main .main-inner .page-content .sidemain:nth-child(1n + 1) {
+  .page-two-column .content .content-inner .page-content .main:nth-child(1n + 1) {
     clear: both;
   }
-  .page-two-columns .main .main-inner .page-content .sidemain .part-title {
-    margin: 0 0 0 20px;
-  }
-  .page-two-columns .main .main-inner .page-content .sidemain .part-title:first-child {
-    margin-top: 25px;
+  .page-two-column .content .content-inner .page-content .main .part-header {
+    display: none;
   }
 }
 .remodal .remodal-inner .remodal-close {
