@@ -3,23 +3,28 @@
 {% include head.html %}
 <body class="post">
     {% include header.html %}
-    {% include parts/intro-post.html %}
-    <section class="main">
-        <div class="main-inner">
+    {% include parts/intro-page.html %}
+    <section class="content">
+        <div class="content-inner">
             <div class="center">
-                <div class="post-content">
-                    <div class="part">
+                <div class="page-content">
+                    {% include sidebar.html %}
+                    <div class="main">
+                        <div class="part-header">
+                        </div>
                         <div class="part-content">
-                            <p class="part-tags">{{ page.tags }}</p>
-                            <h2 class="part-title">{{ page.title }}</h2>
-                            {% include parts/share.html %}
-                            {{ content }}
+                            <div class="part-content-inner">
+                                <div class="part-title">
+                                </div>
+                                {{ content }}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    {% include modals/contrato.html %}
     {% include footer.html %}
 </body>
 </html>
