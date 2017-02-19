@@ -824,43 +824,46 @@ h5 {
   content: "Eu quero esse cupom";
 }
 @media only screen and (max-width: 768px) {
-  .page.oferta .page-content .sidemain .part-content .part-content-inner .oferta-img {
+  .page.cupons .page-content .main .part-content .part-content-inner .oferta-img {
     width: calc(99.9% * 1/1);
   }
-  .page.oferta .page-content .sidemain .part-content .part-content-inner .oferta-img:nth-child(1n) {
+  .page.cupons .page-content .main .part-content .part-content-inner .oferta-img:nth-child(1n) {
     float: left;
     margin-right: 0;
     clear: none;
   }
-  .page.oferta .page-content .sidemain .part-content .part-content-inner .oferta-img:last-child {
+  .page.cupons .page-content .main .part-content .part-content-inner .oferta-img:last-child {
     margin-right: 0;
   }
-  .page.oferta .page-content .sidemain .part-content .part-content-inner .oferta-img:nth-child(1n) {
+  .page.cupons .page-content .main .part-content .part-content-inner .oferta-img:nth-child(1n) {
     margin-right: 0;
     float: right;
   }
-  .page.oferta .page-content .sidemain .part-content .part-content-inner .oferta-img:nth-child(1n + 1) {
+  .page.cupons .page-content .main .part-content .part-content-inner .oferta-img:nth-child(1n + 1) {
     clear: both;
   }
-  .page.oferta .page-content .sidemain .part-content .part-content-inner .oferta-features {
+  .page.cupons .page-content .main .part-content .part-content-inner .oferta-features {
     width: calc(99.9% * 1/1);
   }
-  .page.oferta .page-content .sidemain .part-content .part-content-inner .oferta-features:nth-child(1n) {
+  .page.cupons .page-content .main .part-content .part-content-inner .oferta-features:nth-child(1n) {
     float: left;
     margin-right: 0;
     clear: none;
   }
-  .page.oferta .page-content .sidemain .part-content .part-content-inner .oferta-features:last-child {
+  .page.cupons .page-content .main .part-content .part-content-inner .oferta-features:last-child {
     margin-right: 0;
   }
-  .page.oferta .page-content .sidemain .part-content .part-content-inner .oferta-features:nth-child(1n) {
+  .page.cupons .page-content .main .part-content .part-content-inner .oferta-features:nth-child(1n) {
     margin-right: 0;
     float: right;
   }
-  .page.oferta .page-content .sidemain .part-content .part-content-inner .oferta-features:nth-child(1n + 1) {
+  .page.cupons .page-content .main .part-content .part-content-inner .oferta-features:nth-child(1n + 1) {
     clear: both;
   }
-  .page.oferta .page-content .sidemain .part-content .part-content-inner #form-newsletter .oferta-btn:before {
+  .page.cupons .page-content .main .part-content .part-content-inner #form-newsletter {
+    margin-bottom: 0;
+  }
+  .page.cupons .page-content .main .part-content .part-content-inner #form-newsletter .oferta-btn:before {
     content: "";
   }
 }
