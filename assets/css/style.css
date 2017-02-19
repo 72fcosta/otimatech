@@ -2006,54 +2006,26 @@ h5 {
     height: 190px;
   }
 }
-.slice.price-table .price-table-main {
+.slice.price-table .price-table-main .carousel-price {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   height: 323px;
 }
-.slice.price-table .price-table-main:before {
+.slice.price-table .price-table-main .carousel-price:before {
   content: '';
   display: table;
 }
-.slice.price-table .price-table-main:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-.slice.price-table .price-table-main:before {
-  content: '';
-  display: table;
-}
-.slice.price-table .price-table-main:after {
+.slice.price-table .price-table-main .carousel-price:after {
   content: '';
   display: table;
   clear: both;
 }
-.slice.price-table .price-table-main ul.price:first-child {
-  margin-bottom: 20px;
-}
-.slice.price-table .price-table-main ul.price {
-  width: calc(99.9% * 1/3 - (20px - 20px * 1/3));
+.slice.price-table .price-table-main .carousel-price .item ul.price {
   background: #fff;
   padding: 0 0 20px;
 }
-.slice.price-table .price-table-main ul.price:nth-child(1n) {
-  float: left;
-  margin-right: 20px;
-  clear: none;
-}
-.slice.price-table .price-table-main ul.price:last-child {
-  margin-right: 0;
-}
-.slice.price-table .price-table-main ul.price:nth-child(3n) {
-  margin-right: 0;
-  float: right;
-}
-.slice.price-table .price-table-main ul.price:nth-child(3n + 1) {
-  clear: both;
-}
-.slice.price-table .price-table-main ul.price li.price-field {
+.slice.price-table .price-table-main .carousel-price .item ul.price li.price-field {
   text-align: center;
   color: #4d4f52;
   font-size: 16px;
@@ -2061,22 +2033,22 @@ h5 {
   margin: 10px 20px;
   padding: 7px 0;
 }
-.slice.price-table .price-table-main ul.price li.price-field small {
+.slice.price-table .price-table-main .carousel-price .item ul.price li.price-field small {
   font-size: 11px;
 }
-.slice.price-table .price-table-main ul.price li.price-btn {
+.slice.price-table .price-table-main .carousel-price .item ul.price li.price-btn {
   text-align: center;
 }
-.slice.price-table .price-table-main ul.price li.price-velocidade.fibra {
+.slice.price-table .price-table-main .carousel-price .item ul.price li.price-velocidade.fibra {
   background: #87cdd2;
 }
-.slice.price-table .price-table-main ul.price li.price-velocidade.fibra p {
+.slice.price-table .price-table-main .carousel-price .item ul.price li.price-velocidade.fibra p {
   border-top: 1px solid #9fd7db;
 }
-.slice.price-table .price-table-main ul.price li.price-velocidade.fibra:after {
+.slice.price-table .price-table-main .carousel-price .item ul.price li.price-velocidade.fibra:after {
   border-top: 12px solid #87cdd2;
 }
-.slice.price-table .price-table-main ul.price li.price-velocidade {
+.slice.price-table .price-table-main .carousel-price .item ul.price li.price-velocidade {
   position: relative;
   text-align: center;
   background: #eb5e50;
@@ -2085,12 +2057,12 @@ h5 {
   padding: 5px 20px;
   margin-bottom: 10px;
 }
-.slice.price-table .price-table-main ul.price li.price-velocidade p {
+.slice.price-table .price-table-main .carousel-price .item ul.price li.price-velocidade p {
   padding-top: 10px;
   font-size: 18px;
   border-top: 2px solid #f18e85;
 }
-.slice.price-table .price-table-main ul.price li.price-velocidade:after {
+.slice.price-table .price-table-main .carousel-price .item ul.price li.price-velocidade:after {
   border-top: 12px solid #eb5e50;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
