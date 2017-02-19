@@ -2076,7 +2076,7 @@ h5 {
 }
 @media only screen and (max-width: 1000px) {
   .slice.price-table .price-table-main {
-    max-width: 180px;
+    max-width: 200px;
     margin-left: auto;
     margin-right: auto;
   }
