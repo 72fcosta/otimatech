@@ -267,12 +267,12 @@ gulp.task("reconstruir", function(callback) {
 //F7
 gulp.task("deploy", function(callback) {
     runSequence(
-        "replace-url-in",
-        "jekyll-build",
-        "timestamp",
         "git-add",
         "git-commit",
         "git-push",
+        "replace-url-in",
+        "jekyll-build",
+        "timestamp",
         "linode",
         "replace-url-out",
         callback

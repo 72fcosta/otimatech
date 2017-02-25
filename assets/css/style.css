@@ -857,10 +857,48 @@ h5 {
 .page.area .page-content .main .part-content .part-content-inner {
   margin-bottom: 20px;
 }
+.page.area .page-content .main .part-content .part-content-inner li {
+  width: calc(99.9% * 1/3 - (20px - 20px * 1/3));
+  list-style: disc;
+  list-style-position: inside;
+}
+.page.area .page-content .main .part-content .part-content-inner li:nth-child(1n) {
+  float: left;
+  margin-right: 20px;
+  clear: none;
+}
+.page.area .page-content .main .part-content .part-content-inner li:last-child {
+  margin-right: 0;
+}
+.page.area .page-content .main .part-content .part-content-inner li:nth-child(3n) {
+  margin-right: 0;
+  float: right;
+}
+.page.area .page-content .main .part-content .part-content-inner li:nth-child(3n + 1) {
+  clear: both;
+}
 @media only screen and (max-width: 800px) {
-  .page.area .page-content .part.part-img .part-content img {
+  .page.area .page-content .main .part-content img {
     width: auto;
     height: 100px;
+  }
+  .page.area .page-content .main .part-content .part-content-inner li {
+    width: calc(99.9% * 1/1 - (20px - 20px * 1/1));
+  }
+  .page.area .page-content .main .part-content .part-content-inner li:nth-child(1n) {
+    float: left;
+    margin-right: 20px;
+    clear: none;
+  }
+  .page.area .page-content .main .part-content .part-content-inner li:last-child {
+    margin-right: 0;
+  }
+  .page.area .page-content .main .part-content .part-content-inner li:nth-child(1n) {
+    margin-right: 0;
+    float: right;
+  }
+  .page.area .page-content .main .part-content .part-content-inner li:nth-child(1n + 1) {
+    clear: both;
   }
 }
 .page.cupons .page-content .main .part-content .part-content-inner .oferta-features {

@@ -6,7 +6,7 @@ formkeep: 729ae68487eb
 baseurl: ""
 google_analytics: "UA-82067299-1"
 search_console: qgL2jXXnhOtZdKz-vpydWBNsSaEouK2pWz7J9eYAmos
-url: "https://redetelenew.com"
+url: "http://localhost:3000"
 
 # User settings
 razao_social: "Rede Telenew Eireli ME - CNPJ 15.065.705/0001-64"
