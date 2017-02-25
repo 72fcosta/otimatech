@@ -11,8 +11,17 @@ icon: "check-square-o"
 excerpt_separator: <!--more-->
 ---
 
-Lorem ryan ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur.
+
+FIBRA TeleNew 10 MEGA
+
+É A BANDA LARGA MAIS RÁPIDA!
+
+Fique conectado o tempo todo, com megavelocidade e tecnologia de ponta.
+
+A FIBRA TeleNew 10 MEGA é a velocidade ideal para quem busca mais agilidade para enviar e receber e-mails, ler notícias, fazer pesquisas, baixar músicas e gosta de navegar por diversos sites e conhecer as novidades da rede.
+
+O sinal do Modem Wi-Fi pode sofrer limitações, de acordo com obstáculos e distância do local de acesso à internet. Oferta válida até ---/--/---- na contratação de pacotes de velocidadeequipamentos cedidos pela REDE TeleNew deverão ser devolvidos na rescisão do contrato
+
+Não pague adesão. Contrate qualquer plano com fidelidade de 24 meses
+
+na contratação dos planos de 05, 10, 15, 20, 30 megas adesão gratuita para permanência de 24 meses
