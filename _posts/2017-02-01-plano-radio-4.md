@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "5 Mega"
+title: "2 Mega"
 link: "/planos.html"
 image: "radio.jpg"
 css: fibra
 tags:
 - price
 - price-fibra
-velocidade: 1
-upload: 1
-tipo: Fibra
+velocidade: 2
+price: "49,90"
+tipo: Rádio
 ---
 
-Internet via rádio com conexão de 5 Mega.
+Internet via rádio com conexão de 2 Mega.

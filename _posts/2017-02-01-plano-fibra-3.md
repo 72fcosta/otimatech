@@ -6,10 +6,10 @@ image: "radio.jpg"
 css: fibra
 tags:
 - price
-- price-radio
-velocidade: 5
-price: "99,90"
-tipo: Rádio
+- price-fibra
+velocidade: 1
+price: consulte
+tipo: Fibra
 ---
 
 Internet via rádio com conexão de 5 Mega.

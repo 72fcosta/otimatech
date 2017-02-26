@@ -8,7 +8,7 @@ tags:
 - price
 - price-fibra
 velocidade: 1
-upload: 1
+price: consulte
 tipo: Fibra
 ---
 
