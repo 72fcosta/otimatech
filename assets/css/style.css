@@ -1123,6 +1123,11 @@ h5 {
   padding: 20px;
   background: #033d69;
   font-size: 28px;
+  height: 80px;
+}
+.page.contato .page-content .main .part-phone small,
+.page.contato .page-content .main .part-whatsapp small {
+  margin-right: 10px;
 }
 .page.contato .page-content .main .part-phone p,
 .page.contato .page-content .main .part-whatsapp p {
@@ -1136,10 +1141,6 @@ h5 {
 }
 .page.contato .page-content .main .part-whatsapp {
   background: #72d76c;
-  height: 80px;
-}
-.page.contato .page-content .main .part-whatsapp small {
-  margin-right: 10px;
 }
 .page.contato .page-content .main form .form-inner {
   margin-top: 30px;
