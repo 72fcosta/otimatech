@@ -2,13 +2,12 @@
 layout: post
 title: "5 Mega"
 link: "/planos.html"
-image: "radio.jpg"
 css: fibra
 tags:
 - price
 - price-fibra
-velocidade: 1
-price: consulte
+velocidade: 5
+price: "79,90"
 tipo: Fibra
 ---
 

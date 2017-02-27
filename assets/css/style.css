@@ -1105,6 +1105,42 @@ h5 {
     width: 285px;
   }
 }
+.page.contato .page-content .main .part-phone,
+.page.contato .page-content .main .part-whatsapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  border: 4px solid #efefef;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 20px;
+  background: #033d69;
+  font-size: 28px;
+}
+.page.contato .page-content .main .part-phone p,
+.page.contato .page-content .main .part-whatsapp p {
+  margin: 0;
+  text-align: center;
+}
+.page.contato .page-content .main .part-phone i.fa,
+.page.contato .page-content .main .part-whatsapp i.fa {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.page.contato .page-content .main .part-whatsapp {
+  background: #72d76c;
+  height: 80px;
+}
+.page.contato .page-content .main .part-whatsapp small {
+  margin-right: 10px;
+}
 .page.contato .page-content .main form .form-inner {
   margin-top: 30px;
 }

@@ -2,7 +2,6 @@
 layout: post
 title: "5 Mega"
 link: "/planos.html"
-image: "radio.jpg"
 css: fibra
 tags:
 - price

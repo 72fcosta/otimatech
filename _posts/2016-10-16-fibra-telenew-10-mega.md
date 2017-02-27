@@ -21,4 +21,4 @@ Equipamentos cedidos pela REDE TeleNew deverão ser devolvidos na rescisão do c
 
 Não pague adesão. Contrate qualquer plano com fidelidade de 24 meses
 
-Na contratação dos planos de 05, 10, 15, 20, 30 megas adesão gratuita para permanência de 24 meses
+Na contratação dos planos de 05, 10, 15, 20 megas adesão gratuita para permanência de 24 meses
