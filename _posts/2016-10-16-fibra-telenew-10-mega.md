@@ -11,7 +11,7 @@ icon: "check-square-o"
 excerpt_separator: <!--more-->
 ---
 
-Fique conectado o tempo todo, com megavelocidade e tecnologia de ponta.
+Fique conectado o tempo todo, com mega velocidade e tecnologia de ponta.
 
 A FIBRA TeleNew 10 MEGA é a velocidade ideal para quem busca mais agilidade para enviar e receber e-mails, ler notícias, fazer pesquisas, baixar músicas e gosta de navegar por diversos sites e conhecer as novidades da rede.
 <!--more-->
