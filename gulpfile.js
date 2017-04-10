@@ -35,23 +35,6 @@ gulp.task("font-del", function() {
     del("assets/fonts");
 });
 
-gulp.task("fontawesome", function() {
-    rsync({
-        src: "_src/third/fontawesome/font*.*",
-        dest: "assets/fonts",
-        recursive: true,
-        exclude: ["*.css"],
-        args: [ "--verbose" ],
-        delete: true,
-        compareMode: "checksum",
-        onStdout: function (data) {
-            console.log(data.toString());
-        }
-    }, function() {
-        console.log("End");
-    });
-});
-
 gulp.task("webfonts", ["font-del"], function () {
     return gulp.src("_src/fonts/fonts.list")
         .pipe(googleWebFonts(options))
@@ -238,7 +221,6 @@ gulp.task("watch", function () {
     gulp.watch("_src/third/**/*.js", ["third-js", "jekyll-rebuild"]);
     gulp.watch("_src/img/**/*", ["image", "jekyll-rebuild"]);
     gulp.watch("_posts/**/*", ["jekyll-rebuild"]);
-    gulp.watch("_src/third/fontawesome/*", ["fontawesome"]);
     gulp.watch("_src/favicon/*", ["favicon"]);
     gulp.watch("_src/js/*.js", ["js", "jekyll-rebuild"]);
     gulp.watch("_src/styl/**/*.styl", ["stylus"]);
@@ -255,7 +237,6 @@ gulp.task("reconstruir", function(callback) {
         "third-js",
         "image",
         "js",
-        "fontawesome",
         "stylus",
         "jekyll-build",
         "timestamp",
@@ -285,7 +266,6 @@ gulp.task("letscode", function(callback) {
         "third-css",
         "third-js",
         "favicon",
-        "fontawesome",
         "js",
         "stylus",
         "browser-sync",

@@ -12,7 +12,7 @@ image: "contato.jpg"
         <i class="fa fa-whatsapp"></i> <small>11</small> 94790-8090
     </div>
     <hr />
-    <form accept-charset="UTF-8" class="form" id="form-contato" method="post" action="https://formkeep.com/f/{{ site.formkeep }}">
+    <form action="https://formspree.io/{{ site.email }}" method="post">
         <div class="form-inner">
             <div class="form-side">
                 <div class="form-group form-group-lg has-feedback has-feedback-left">
@@ -26,9 +26,12 @@ image: "contato.jpg"
                     <input class="form-control" type="text" name="contatoEmail" placeholder="E-mail" />
                 </div>
                 <div class="form-group form-group-lg has-feedback has-feedback-left">
-                    <label class="control-label" for="contatoAssunto">Assunto</label>
-                    <i class="fa fa-tag form-control-feedback"></i>
-                    <input class="form-control" type="text" name="contatoAssunto" placeholder="Assunto" />
+                        <label class="control-label" for="contatoAssunto">Assunto</label>
+                        <i class="fa fa-tag form-control-feedback"></i>
+                        <input type="hidden" name="_next" value="{{ site.url }}/#contato" />
+                        <input type="hidden" name="_subject" value="Contato do site" />
+                        <input type="hidden" name="_format" value="plain" />
+                        <input class="form-control" type="text" name="contatoAssunto" placeholder="Assunto" />
                 </div>
             </div>
             <div class="form-side">

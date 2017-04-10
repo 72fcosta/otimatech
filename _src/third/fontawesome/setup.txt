@@ -1,1 +1,0 @@
-a FONT PATH foi alterado de "../fonts/..." para "../../fonts/..."
