@@ -31,11 +31,19 @@ var options                 = { }; //webfonts
 
 //--------------------------------------------------------------
 
+gulp.task("fonts", function(callback) {
+    runSequence(
+        "font-del",
+        "webfonts",
+        "jekyll-rebuild",
+        callback
+        );
+});
 gulp.task("font-del", function() {
     del("assets/fonts");
 });
 
-gulp.task("webfonts", ["font-del"], function () {
+gulp.task("webfonts", function () {
     return gulp.src("_src/fonts/fonts.list")
         .pipe(googleWebFonts(options))
         .pipe(gulp.dest("assets/fonts"))
@@ -198,7 +206,7 @@ gulp.task("git-push", function() {
 gulp.task("linode", function() {
     rsync({
         src: "./_site/",
-        dest: "diple@45.33.23.219:/var/www/html/" + dominio,
+        dest: "diple@45.33.23.219:/var/www/html/lorem.com",
         ssh: true,
         recursive: true,
         exclude: [".htaccess", "gulpfile.js", "config", "description", "HEAD", "hooks", "tarefas-do-projeto.txt"],
@@ -216,7 +224,7 @@ gulp.task("linode", function() {
 //--------------------------------------------------------------
 
 gulp.task("watch", function () {
-    gulp.watch(["_src/fonts/fonts.list"], ["webfonts"]).on("change", browserSync.reload);
+    gulp.watch(["_src/fonts/fonts.list"], ["fonts"]).on("change", browserSync.reload);
     gulp.watch("_src/third/**/*.css", ["third-css", "jekyll-rebuild"]);
     gulp.watch("_src/third/**/*.js", ["third-js", "jekyll-rebuild"]);
     gulp.watch("_src/img/**/*", ["image", "jekyll-rebuild"]);
@@ -232,7 +240,7 @@ gulp.task("watch", function () {
 //F6
 gulp.task("reconstruir", function(callback) {
     runSequence(
-        "webfonts",
+        "fonts",
         "third-css",
         "third-js",
         "image",
