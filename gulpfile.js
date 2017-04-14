@@ -26,7 +26,7 @@ var rupture                 = require("rupture");
 var fs                      = require("fs");
 var varsProject             = JSON.parse(fs.readFileSync("./vars-project.json"));
 var dominio                 = varsProject.dominio;
-var regexp                  = new RegExp("https://" + dominio, "g");//jekyll
+var regexp                  = new RegExp("http://" + dominio, "g");//jekyll
 var options                 = { }; //webfonts
 
 //--------------------------------------------------------------
@@ -69,7 +69,7 @@ gulp.task("third-js", function () {
 
 gulp.task("replace-url-in", function() {
     return gulp.src("_config.yml")
-        .pipe(replace(/http:\/\/localhost:3000/g, "https://" + dominio))
+        .pipe(replace(/http:\/\/localhost:3000/g, "http://" + dominio))
         .pipe(gulp.dest(""));
 });
 
