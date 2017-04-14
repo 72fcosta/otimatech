@@ -206,7 +206,7 @@ gulp.task("git-push", function() {
 gulp.task("linode", function() {
     rsync({
         src: "./_site/",
-        dest: "diple@45.33.23.219:/var/www/html/lorem.com",
+        dest: "diple@45.33.23.219:/var/www/html/" + dominio,
         ssh: true,
         recursive: true,
         exclude: [".htaccess", "gulpfile.js", "config", "description", "HEAD", "hooks", "tarefas-do-projeto.txt"],
