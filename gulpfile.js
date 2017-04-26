@@ -26,7 +26,7 @@ var rupture                 = require("rupture");
 var fs                      = require("fs");
 var varsProject             = JSON.parse(fs.readFileSync("./vars-project.json"));
 var dominio                 = varsProject.dominio;
-var regexp                  = new RegExp("http://" + dominio, "g");//jekyll
+var regexp                  = new RegExp("https://" + dominio, "g");//jekyll
 var options                 = { }; //webfonts
 
 //--------------------------------------------------------------
@@ -35,19 +35,33 @@ gulp.task("fonts", function(callback) {
     runSequence(
         "font-del",
         "webfonts",
-        "jekyll-rebuild",
         callback
         );
 });
+
 gulp.task("font-del", function() {
-    del("assets/fonts");
+    del("fonts");
 });
 
 gulp.task("webfonts", function () {
-    return gulp.src("_src/fonts/fonts.list")
-        .pipe(googleWebFonts(options))
-        .pipe(gulp.dest("assets/fonts"))
-        ;
+    return gulp.src("fonts.list")
+    .pipe(googleWebFonts(options))
+    .pipe(gulp.dest("fonts"))
+    ;
+});
+
+//--------------------------------------------------------------
+
+gulp.task("replace-in", function() {
+    return gulp.src("_config.yml")
+        .pipe(replace(/http:\/\/localhost:3000/g, "https://" + dominio))
+        .pipe(gulp.dest(""));
+});
+
+gulp.task("replace-out", function() {
+    return gulp.src("_config.yml")
+        .pipe(replace(regexp, "http://localhost:3000"))
+        .pipe(gulp.dest(""));
 });
 
 //--------------------------------------------------------------
@@ -63,20 +77,6 @@ gulp.task("third-js", function () {
     return gulp.src("_src/third/**/*.js")
         .pipe(concatJs("third.js"))
         .pipe(gulp.dest("assets/js/"));
-});
-
-//--------------------------------------------------------------
-
-gulp.task("replace-url-in", function() {
-    return gulp.src("_config.yml")
-        .pipe(replace(/http:\/\/localhost:3000/g, "http://" + dominio))
-        .pipe(gulp.dest(""));
-});
-
-gulp.task("replace-url-out", function() {
-    return gulp.src("_config.yml")
-        .pipe(replace(regexp, "http://localhost:3000"))
-        .pipe(gulp.dest(""));
 });
 
 //--------------------------------------------------------------
@@ -155,12 +155,25 @@ gulp.task("js", function() {
 
 //--------------------------------------------------------------
 
-gulp.task("clean", function() {
+gulp.task("image-watch", ["image"], function (done) {
+    browserSync.reload();
+    done();
+});
+
+gulp.task("image", function(callback) {
+    runSequence(
+        "image-del",
+        "imagemin",
+        callback
+        );
+});
+
+gulp.task("image-del", function() {
     return del(["assets/img/"]);
 });
 
-gulp.task("image", ["clean"], function() {
-    return gulp.src("_src/img/*")
+gulp.task("imagemin", function() {
+    return gulp.src("_src/img/*.*")
     .pipe(imagemin())
     .pipe(gulp.dest("assets/img/"));
 });
@@ -224,12 +237,11 @@ gulp.task("linode", function() {
 //--------------------------------------------------------------
 
 gulp.task("watch", function () {
-    gulp.watch(["_src/fonts/fonts.list"], ["fonts"]).on("change", browserSync.reload);
+    gulp.watch(["fonts.list"], ["fonts"]).on("change", browserSync.reload);
     gulp.watch("_src/third/**/*.css", ["third-css", "jekyll-rebuild"]);
     gulp.watch("_src/third/**/*.js", ["third-js", "jekyll-rebuild"]);
-    gulp.watch("_src/img/**/*", ["image", "jekyll-rebuild"]);
+    gulp.watch("_src/img/**/*", ["image-watch", "jekyll-rebuild"]);
     gulp.watch("_posts/**/*", ["jekyll-rebuild"]);
-    gulp.watch("_src/favicon/*", ["favicon"]);
     gulp.watch("_src/js/*.js", ["js", "jekyll-rebuild"]);
     gulp.watch("_src/styl/**/*.styl", ["stylus"]);
     gulp.watch(["*.html", "_includes/**/*.html", "_layouts/*.html", "_config.yml"], ["jekyll-rebuild"]);
@@ -240,14 +252,14 @@ gulp.task("watch", function () {
 //F6
 gulp.task("reconstruir", function(callback) {
     runSequence(
-        "fonts",
         "third-css",
         "third-js",
+        "favicon",
         "image",
         "js",
+        "fonts",
         "stylus",
         "jekyll-build",
-        "timestamp",
         "browserSync-reload",
         callback
         );
@@ -256,14 +268,14 @@ gulp.task("reconstruir", function(callback) {
 //F7
 gulp.task("deploy", function(callback) {
     runSequence(
+        "replace-in",
         "git-add",
         "git-commit",
         "git-push",
-        "replace-url-in",
         "jekyll-build",
         "timestamp",
         "linode",
-        "replace-url-out",
+        "replace-out",
         callback
         );
 });
@@ -274,7 +286,9 @@ gulp.task("letscode", function(callback) {
         "third-css",
         "third-js",
         "favicon",
+        "image",
         "js",
+        "fonts",
         "stylus",
         "browser-sync",
         "watch",
