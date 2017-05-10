@@ -1,12 +1,12 @@
 # Site settings
 title: "Rede Telenew"
 description: "Internet via rádio e via fibra Mauá"
-madmimi: 238575
-formkeep: 729ae68487eb
+madmimi: "238575"
+formspree: "72fcosta@gmail.com"
 baseurl: ""
 google_analytics: "UA-82067299-1"
 search_console: qgL2jXXnhOtZdKz-vpydWBNsSaEouK2pWz7J9eYAmos
-url: "https://redetelenew.com"
+url: https://redetelenew.com
 
 # User settings
 razao_social: "Rede Telenew Eireli ME - CNPJ 15.065.705/0001-64"
@@ -29,8 +29,9 @@ slice_newsletter_description: Receba antes em seu e-mail nossos lançamentos e p
 telefone: (XX) XXXXX-XXXX
 whatsapp: (XX) XXXXX-XXXX
 email: contato@redetelenew.com
+email2: suporte@redetelenew.com.br
 endereco: Rua Lorem Ipsum, XXX - XX - CEP XXXXX-XXX
-face_username:  RedeTelenew
+facebook_user:  RedeTelenew
 
 # Build settings
 markdown: kramdown
