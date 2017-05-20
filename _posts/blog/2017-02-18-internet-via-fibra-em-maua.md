@@ -3,6 +3,7 @@ layout: post
 title: Internet via fibra em Mauá
 subtitle: Conheça mais sobre essa tecnologia
 date: 2017-02-18
+author: fabio_costa
 image: "fibra.jpg"
 categories:
 - blog

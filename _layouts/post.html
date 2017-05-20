@@ -18,6 +18,29 @@
                         </div>
                         <div class="part-content">
                             <div class="part-content-inner">
+                                {% assign author = site.data.authors[page.author] %}
+                                <div class="page-author">
+                                    {% if author.facebook %}
+                                    <span class="author-label author-facebook">
+                                        <i class="fa fa-facebook"></i><a href="https://facebook.com/{{ author.facebook }}" target="_blank">{{ author.facebook }}</a>
+                                    </span>
+                                    {% endif %}
+                                    {% if author.twitter %}
+                                    <span class="author-label author-twitter">
+                                        <i class="fa fa-twitter"></i><a href="https://twitter.com/{{ author.twitter }}" target="_blank">{{ author.twitter }}</a>
+                                    </span>
+                                    {% endif %}
+                                    {% if author.googleplus %}
+                                    <span class="author-label author-googleplus">
+                                        <i class="fa fa-google-plus"></i><a href="https://plus.google.com/{{ author.googleplus }}" target="_blank">{{ author.googleplus }}</a>
+                                    </span>
+                                    {% endif %}
+                                    {% if author.name %}
+                                    <span class="author-label author-name">
+                                        <i class="fa fa-pencil"></i><a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+                                    </span>
+                                    {% endif %}
+                                </div>
                                 {{ content }}
                             </div>
                             {% include parts/share.html %}
