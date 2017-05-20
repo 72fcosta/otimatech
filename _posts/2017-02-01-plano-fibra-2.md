@@ -9,6 +9,8 @@ tags:
 velocidade: 15
 price: "129,90"
 tipo: Fibra
+sitemap:
+  exclude: "yes"
 ---
 
 Internet via rádio com conexão de 15 Mega.

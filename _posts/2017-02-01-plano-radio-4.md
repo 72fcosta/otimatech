@@ -9,6 +9,8 @@ tags:
 velocidade: 2
 price: "49,90"
 tipo: Rádio
+sitemap:
+  exclude: "yes"
 ---
 
 Internet via rádio com conexão de 2 Mega.

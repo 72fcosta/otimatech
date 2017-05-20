@@ -9,6 +9,8 @@ tags:
 velocidade: 4
 price: "89,90"
 tipo: Rádio
+sitemap:
+  exclude: "yes"
 ---
 
 Internet via rádio com conexão de 4 Mega.

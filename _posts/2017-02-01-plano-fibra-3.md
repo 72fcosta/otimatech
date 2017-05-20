@@ -9,6 +9,8 @@ tags:
 velocidade: 10
 price: "99,90"
 tipo: Fibra
+sitemap:
+  exclude: "yes"
 ---
 
 Internet via rádio com conexão de 10 Mega.

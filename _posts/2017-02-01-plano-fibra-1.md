@@ -9,6 +9,8 @@ tags:
 velocidade: 20
 price: "149,90"
 tipo: Fibra
+sitemap:
+  exclude: "yes"
 ---
 
 Internet via rádio com conexão de 20 Mega.

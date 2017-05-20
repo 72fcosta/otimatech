@@ -9,6 +9,8 @@ tags:
 velocidade: 5
 price: "99,90"
 tipo: Rádio
+sitemap:
+  exclude: "yes"
 ---
 
 Internet via rádio com conexão de 5 Mega.
