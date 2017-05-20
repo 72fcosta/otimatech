@@ -6,7 +6,8 @@ link: "https://www.facebook.com/vieiralety"
 date: 2016-10-20 21:31:03
 tags:
 - depoimento
-excerpt_separator: <!--more-->
+sitemap:
+  exclude: "yes"
 ---
 
 "Adorei! Velocidade ótima! Podem confiar! Muito bom atendimento."

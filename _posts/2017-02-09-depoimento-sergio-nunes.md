@@ -6,7 +6,8 @@ link: "https://www.facebook.com/sergio.nunes.16"
 date: 2017-02-09 21:31:03
 tags:
 - depoimento
-excerpt_separator: <!--more-->
+sitemap:
+  exclude: "yes"
 ---
 
 "Internet de qualidade. Atendimento qualificado. Recomendo Telenew!"
