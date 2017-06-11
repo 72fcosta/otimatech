@@ -455,11 +455,8 @@ html.remodal-is-locked {
 
 /* Slider */
 
-.slick-loading .slick-list {
-  background: #fff url("slick/ajax-loader.gif") center center no-repeat;
-}
+.slick-loading .slick-list
 
-/* Icons */
 
 @font-face {
   font-family: 'slick';
