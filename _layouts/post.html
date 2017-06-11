@@ -10,6 +10,29 @@
                 <div class="page-content">
                     {% include sidebar.html %}
                     <div class="main">
+                        {% assign author = site.data.authors[page.author] %}
+                        <span itemscope itemtype="http://schema.org/BlogPosting">
+                            <meta itemprop="mainEntityOfPage" content="{{ site.url }}" />
+                            <meta itemprop="datePublished" content="{{ page.date | date: '%Y-%m-%d' }}" />
+                            <meta itemprop="dateModified" content="{{ page.edit | date: '%Y-%m-%d' }}" />
+                            <meta itemprop="headline" content="{{ page.title }}" />
+                            <span itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                                <meta itemprop="url" content="{{ page.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" />
+                                <meta itemprop="width" content="600" />
+                                <meta itemprop="height" content="400" />
+                            </span>
+                            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                <meta itemprop="name" content="{{ author.name }}" />
+                            </span>
+                            <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                                <meta itemprop="name" content="Diple : Web Design" />
+                                <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                                    <meta itemprop="url" content="{{ '/assets/img/diple-logo.png' | prepend: site.baseurl | prepend: site.url }}">
+                                    <meta itemprop="width" content="123">
+                                    <meta itemprop="height" content="144">
+                                </div>
+                            </span>
+                        </span>
                         <div class="part-header">
                             <h3 class="part-title">{{ page.title }}</h3>
                             <div class="part-img">
@@ -18,7 +41,6 @@
                         </div>
                         <div class="part-content">
                             <div class="part-content-inner">
-                                {% assign author = site.data.authors[page.author] %}
                                 <div class="page-author">
                                     {% if author.facebook %}
                                     <span class="author-label author-facebook">

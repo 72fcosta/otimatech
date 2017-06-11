@@ -3,7 +3,7 @@
 *:before
     margin 0
     padding 0
-    box-sizing border-box  
+    box-sizing border-box
 
 html
     height 100% //Para stick footer
@@ -13,8 +13,9 @@ body
     min-height 100% //Para stick footer
     display: flex //Para stick footer
     flex-direction: column //Para stick footer
+    padding-top nav-height
         
-.main
+main
     position: relative
     display flex
     flex 1
@@ -29,8 +30,21 @@ li
 .center
     lost-center 1200px
 
+i.di:before
+    content: ""
+    display inline-block
+    height 54px
+    width 54px
+
+di-icons = map-marker, light-bulb, target, html-5, disqus, css, cloudflare, bootstrap-4, ubuntu-5, responsive-devices
+for icon in di-icons
+    i.di-{icon}:before
+        background-image url("/assets/img/icons/" + icon + ".svg")
+        background-repeat no-repeat
+        background-position center
+        background-size: 54px 54px
+
 .left-img
-    float left
     padding: 0 20px 15px 0
 
 .right-img
@@ -38,21 +52,44 @@ li
     padding: 0 0 15px 20px
     
 .center-img
-    text-align center
+    display block
+    width 100%
+    height auto
     margin 5px 0 20px
+    text-align: center
     img
-        width 100%
-        height auto
-
+        width 400px
+    
 //Override mobile style for phone number
 a[href^=tel]e
     color: colorp
     text-decoration: none
     pointer-events:none
 
-//Não exibir pontilhados nos links
-a:focus
+//Não exibir pontilhados nos links e botões
+a:focus, .btn
     outline: none!important
+
+//BOOTSTRAP
+//remover sombras laterais do carousel
+.carousel-control.left, .carousel-control.right
+    background: none!important
+    outline: 0
+
+//posicionar setinhas do slider no centro vertical, caso trocar os icones de glyphicon para outro qualquer
+.carousel-control
+    display flex
+    align-items center
+    justify-content center
+    opacity: 0.7!important
+    &:hover
+        opacity: 1!important
+    
+//propriedades das setinhas
+.carousel-control .fa
+    font-size: 30px
+    color colorp
+    text-shadow: none
 
 .postfix.button, .prefix.button
     text-align: center!important
@@ -67,7 +104,11 @@ a.btn.btn-s, button.btn.btn-s
     //box-shadow: 0 3px 0 0 colors - 15%;
 
 a.btn.btn-t, button.btn.btn-t
-    corbotao(cinza)
+    corbotao(cinza - 30%)
+    //box-shadow: 0 3px 0 0 colort - 15%;
+
+a.btn.btn-f, button.btn.btn-f
+    corbotao(facebook)
     //box-shadow: 0 3px 0 0 colort - 15%;
 
 a.btn.btn-q, button.btn.btn-q
@@ -75,9 +116,6 @@ a.btn.btn-q, button.btn.btn-q
     border-color: cinza
     &:hover, &:focus
         border-color: lighten(cinza, 20%)
-        
-.btn
-    border-radius radius
         
 a.btn-huge, button.btn-huge
     padding 20px 40px

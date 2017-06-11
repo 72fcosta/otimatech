@@ -136,7 +136,8 @@ gulp.task("browser-sync", ["jekyll-build"], function() {
     browserSync.init({
         server: {
             baseDir: "_site"
-        }
+        },
+        open: false
     });
 });
 
@@ -225,7 +226,7 @@ gulp.task("linode", function() {
 //--------------------------------------------------------------
 
 gulp.task("watch", function () {
-    gulp.watch(["*.html", "_includes/**/*.html", "_layouts/*.html", "_config.yml", "_posts/**/*"], ["jekyll-rebuild"]);
+    gulp.watch(["*.html", "_includes/**/*.html", "_layouts/*.html", "_config.yml", "_data/*.yml", "_posts/**/*"], ["jekyll-rebuild"]);
     gulp.watch(["_src/styl/**/*.styl"], ["stylus"]);
     gulp.watch(["_src/third/**/*.css"], ["third-css", "jekyll-rebuild"]);
     gulp.watch(["_src/js/*.js"], ["js", "jekyll-rebuild"]);

@@ -3,6 +3,7 @@ layout: post
 title: Internet via rádio em Mauá
 subtitle: Conheça mais sobre essa tecnologia
 date: 2017-05-20
+edit: 2017-05-20
 author: fabio_costa
 image: "radio.jpg"
 categories:
