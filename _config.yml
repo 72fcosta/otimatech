@@ -53,6 +53,9 @@ links:
       - sub_title: Planos
         sub_url: "/planos.html"
         sub_intro: "Planos sob medida pra você!"
+      - sub_title: Contrato
+        sub_url: "/contrato.html"
+        sub_intro: "Contrato"
   - top_title: Promoções
     top_url: "#!/"
     nested:
