@@ -26,7 +26,7 @@ Mauá agora tem uma nova opção de conexão de internet via fibra.
 
 3. Fibra ótica é muito rápida. Os dados podem ser transmitidos através de cabos de fibra ótica mais rápido do que o cabeamento tradicional. Neste momento, os usos comerciais de cabeamento de fibra ótica podem transmitir 10-80 Gigabits por segundo em apenas um canal. Segundo relatos, o recorde atual é de 15,5 Terabits por segundo em uma distância de 7.000km. Para colocar isso em perspectiva, isso equivale a 10,3 milhões de conexões DSL.
 
-4. Fibra ótica têm outros usos. A partir do uso tradicional de transmissão de dados, fibras óticas têm crescido muito no que diz respeito ao seu uso. Agora, eles são usados ​​tambpem como mira de arma, espetroscopia, fornecimento de baixos níveis de energia, sinais, artes e até mesmo árvores de natal artificiais.
+4. Fibra ótica têm outros usos. A partir do uso tradicional de transmissão de dados, fibras óticas têm crescido muito no que diz respeito ao seu uso. Agora, eles são usados ​​também como mira de arma, espetroscopia, fornecimento de baixos níveis de energia, sinais, artes e até mesmo árvores de natal artificiais.
 
 5. Fibra ótica não agride a natureza. A quantidade de energia necessária para enviar um flash de luz através de uma distância, em cabos de fibra ótica é muito menor do que a necessária para enviar sinais elétricos. Menos energia significa menos emissão de carbono.
 
