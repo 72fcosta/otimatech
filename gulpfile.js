@@ -257,7 +257,6 @@ gulp.task("reconstruir", function(callback) {
 //F7
 gulp.task("deploy", function(callback) {
     runSequence(
-        "replace-in",
         "git-add",
         "git-commit",
         "git-push",
@@ -265,7 +264,6 @@ gulp.task("deploy", function(callback) {
         "min-css",
         "min-image",
         "linode",
-        "replace-out",
         callback
         );
 });
