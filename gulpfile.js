@@ -53,11 +53,11 @@ gulp.task("webfonts", function () {
 //--------------------------------------------------------------
 
 gulp.task("replace-in", shell.task(
-    "python3.5 -c \'from gulp import jk_replace_lines_in; jk_replace_lines_in(\"" + diplenick + "\", \"" + url + "\")\'"
+    "python3.5 -c \'from dpn_gulp import jk_replace_lines_in; jk_replace_lines_in(\"" + diplenick + "\", \"" + url + "\")\'"
 ));
 
 gulp.task("replace-out", shell.task(
-    "python3.5 -c \'from gulp import jk_replace_lines_out; jk_replace_lines_out(\"" + diplenick + "\", \"" + url + "\")\'"
+    "python3.5 -c \'from dpn_gulp import jk_replace_lines_out; jk_replace_lines_out(\"" + diplenick + "\", \"" + url + "\")\'"
 ));
 
 //-----------------------------------------------------------CSS
