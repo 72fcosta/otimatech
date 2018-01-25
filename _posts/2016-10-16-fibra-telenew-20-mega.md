@@ -19,4 +19,4 @@ O sinal do Modem Wi-Fi pode sofrer limitações, de acordo com obstáculos e dis
 
 Equipamentos cedidos pela REDE TeleNew deverão ser devolvidos na rescisão do contrato
 
-Não pague adesão na contratação do plano 20 Mega com fidelidade de 24 meses.
+Não pague adesão na contratação do plano 20 Mega com fidelidade de 12 meses.
