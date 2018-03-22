@@ -47,18 +47,18 @@ gulp.task("font-del", function() {
 gulp.task("webfonts", function () {
     return gulp.src("fonts.list")
     .pipe(googleWebFonts(options))
-    .pipe(gulp.dest("fonts"))
+    .pipe(gulp.dest("fonts"));
 });
 
 //--------------------------------------------------------------
 
 gulp.task("replace-in", shell.task(
     "python3.5 -c \'from dpn_gulp import jk_replace_lines_in; jk_replace_lines_in(\"" + diplenick + "\", \"" + url + "\")\'"
-));
+    ));
 
 gulp.task("replace-out", shell.task(
     "python3.5 -c \'from dpn_gulp import jk_replace_lines_out; jk_replace_lines_out(\"" + diplenick + "\", \"" + url + "\")\'"
-));
+    ));
 
 //-----------------------------------------------------------CSS
 
@@ -123,7 +123,7 @@ gulp.task("third-js", function() {
 gulp.task("jekyll-build", function(done) {
     browserSync.notify("Building Jekyll");
     return cp.spawn("jekyll", ["build"], {stdio: "inherit"})
-        .on("close", done)
+    .on("close", done)
 });
 
 gulp.task("jekyll-rebuild", ["jekyll-build"], function() {
@@ -205,26 +205,6 @@ gulp.task("git-push", function() {
 
 //--------------------------------------------------------------
 
-gulp.task("linode", function() {
-    rsync({
-        src: "./_site/",
-        dest: "diple@45.33.23.219:/var/www/html/" + dominio,
-        ssh: true,
-        recursive: true,
-        exclude: [".htaccess", "gulpfile.js", "config", "description", "HEAD", "hooks", "tarefas-do-projeto.txt"],
-        args: ["-v"],
-        delete: true,
-        compareMode: "checksum",
-        onStdout: function (data) {
-            console.log(data.toString());
-        }
-    }, function() {
-        console.log("End");
-    });
-});
-
-//--------------------------------------------------------------
-
 gulp.task("watch", function () {
     gulp.watch(["*.html", "_includes/**/*.html", "_layouts/*.html", "_config.yml", "_data/*.yml", "_posts/**/*"], ["jekyll-rebuild"]);
     gulp.watch(["_src/styl/**/*.styl"], ["stylus"]);
@@ -263,7 +243,6 @@ gulp.task("deploy", function(callback) {
         "jekyll-build",
         "min-css",
         "min-image",
-        "linode",
         callback
         );
 });

@@ -3,8 +3,9 @@
     top 0
     width 100%
     z-index 1000
-    background-color white
+    background-color #f3f3f3
     box-shadow: 0 4px 12px 0 rgba(0,0,0,.25);
+    padding 4px 0
     .header-inner
         height nav-height
         .logo
@@ -23,26 +24,27 @@
                 background-size: logo-size
         nav
             float right
-            ul.nav-list>li:last-child a, ul.nav-list>li:last-child a:visited
-                background-color colorp
-                color white
-                &:hover
-                    background colorp + 5%
-                    color white
             ul.nav-list
                 list-style: none
                 margin: 0
                 padding: 0
+                li:last-child a
+                    border none
                 li
                     float left
                     position: relative
+                    height nav-height
+                    display flex
+                    align-items center
                     a, a:visited
                         display block
                         padding 0 20px
-                        line-height nav-height
-                        color texts
+                        color colors - 30%
+                        border-right 1px solid colors - 30%
                         text-decoration: none
-                        text-transform: capitalize
+                        text-transform: uppercase
+                        font-size: 14px
+                        line-height: 14px
                         &:hover
                             color colorp
                         &:not(:only-child)::after
@@ -68,7 +70,7 @@
                                 border-top none
                                 padding 15px
                                 line-height 20px
-.header         
+.header
     .header-inner
         nav
             div.nav-mobile

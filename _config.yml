@@ -1,37 +1,32 @@
 # Site settings
-title: "Rede Telenew"
-description: "Internet via rádio e via fibra Mauá"
-madmimi: "238575"
-formspree: "72fcosta@gmail.com"
-baseurl: ""
-google_analytics: "UA-70980215-3"
-search_console: qgL2jXXnhOtZdKz-vpydWBNsSaEouK2pWz7J9eYAmos
-url: https://redetelenew.com
+title: "Otimatech Telecom"
+description: "Provedor de Internet"
+madmimi: ""
+formspree: ""
+google_analytics: ""
+search_console: ""
+url: http://localhost:3000
 
 # User settings
-razao_social: "Rede Telenew Eireli ME - CNPJ 15.065.705/0001-64"
+razao_social: "A. E. V. Wireless - CNPJ 15.065.705/0001-64"
 
-header_title: Olá, somos a Rede Telenew.
-header_description: A internet que você precisa!
-
-slice_destaques_title: Planos
-slice_destaques_description: Internet via rádio e agora também por fibra!
+header_title: Bem-vindo à Otimatech!
+header_description: Planos para sua família usar à vontade
 
 slice_price-table_title: Planos
-slice_price-table_description: Internet via rádio e agora também por fibra!
+slice_price-table_description: Planos para sua vida
 
 slice_depoimentos_title: Depoimentos
-slice_depoimentos_description: Veja o que os nossos clientes tem a dizer.
+slice_depoimentos_description: Confira abaixo alguns depoimentos
 
-slice_newsletter_title: Lançamentos e promoções
-slice_newsletter_description: Receba antes em seu e-mail nossos lançamentos e promoções.
+slice_newsletter_title: Newsletter
+slice_newsletter_description: Saiba antes o que acontece por aqui
 
 telefone: (XX) XXXXX-XXXX
 whatsapp: (XX) XXXXX-XXXX
-email: contato@redetelenew.com
-email2: suporte@redetelenew.com.br
+email: contato@otimatech.com.br
 endereco: Rua Lorem Ipsum, XXX - XX - CEP XXXXX-XXX
-facebook_user:  RedeTelenew
+facebook_user:  "Otimatech-Telecom-203086623619098"
 
 # Build settings
 markdown: kramdown
@@ -52,28 +47,16 @@ links:
     nested:
       - sub_title: Planos
         sub_url: "/planos.html"
-        sub_intro: "Planos sob medida pra você!"
+        sub_intro: "Planos para sua vida"
       - sub_title: Contrato
         sub_url: "/contrato.html"
         sub_intro: "Contrato"
-  - top_title: Promoções
-    top_url: "#!/"
-    nested:
-      - sub_title: Cupons
-        sub_url: "/cupons.html"
-        sub_intro: "Cupons exclusivos de descontos!"
-      - sub_title: Adesão Grátis
-        sub_url: "/adesao-gratis.html"
-        sub_intro: "Não pague a taxa de adesão. Confira as regras."
   - top_title: Área
     top_url: "/area.html"
     top_intro: "Nossa área de cobertura."
   - top_title: Sobre Nós
     top_url: "/sobre.html"
     top_intro: "Um pouco sobre nossa empresa."
-  - top_title: Blog
-    top_url: "/blog.html"
-    top_intro: "É disso que estamos falando."
   - top_title: Contato
     top_url: "/contato.html"
     top_intro: "Use o formulário abaixo para enviar sua mensagem."
