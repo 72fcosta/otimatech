@@ -24,6 +24,8 @@
                 background-size: logo-size
         nav
             float right
+            ul.nav-list > li > a:first-child
+                border-right 1px solid colors - 30%
             ul.nav-list
                 list-style: none
                 margin: 0
@@ -40,11 +42,10 @@
                         display block
                         padding 0 20px
                         color colors - 30%
-                        border-right 1px solid colors - 30%
                         text-decoration: none
                         text-transform: uppercase
                         font-size: 14px
-                        line-height: 14px
+                        height: 20px
                         &:hover
                             color colorp
                         &:not(:only-child)::after
