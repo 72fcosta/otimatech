@@ -1,17 +1,10 @@
-.header         
+.header
     .header-inner
         +below(break-nav)
             nav
                 width 100%
                 div.nav-mobile
                     display block
-                ul.nav-list>li:last-child a, ul.nav-list>li:last-child a:visited
-                    color white
-                    border-top none
-                    background: colorp
-                    &:hover
-                        border-top none
-                        background colorp
                 ul.nav-list
                     display none
                     background: white
@@ -26,21 +19,9 @@
                             line-height: 20px
                             font-weight: normal
                             font-size: 1.6em
-                        ul.nav-dropdown
-                            background-color lighten(colorp, 20%)
-                            position static
-                            border-radius 0
-                            li
-                                border none
-                                margin-left 0
-                                a, a:visited
-                                    border-left 3px solid white
-                                    color white
-                                    padding-left 30px
-                                    &:hover
-                                        color white
-                        
-.header         
+                ul.nav-list > li > a:first-child
+                    border none
+.header
     .header-inner
         nav
             ul.nav-list
