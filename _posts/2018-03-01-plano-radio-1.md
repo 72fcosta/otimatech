@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "3 Mega"
+title: "5 Mega"
 link: "/planos.html"
 css: fibra
 tags:
 - price
 - price-radio
-velocidade: 3
-price: "69,90"
+velocidade: 15
+price: "100,00"
 tipo: Rádio
 sitemap:
   exclude: "yes"
 ---
 
-Internet via rádio com conexão de 3 Mega.
+Internet via rádio com conexão de 5 Mega.

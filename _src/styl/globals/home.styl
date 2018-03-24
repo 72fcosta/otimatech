@@ -1,20 +1,13 @@
 .home
     .main
         position: relative
-        top -74px
         .slice
             &:nth-child(odd)
                 background: cinza
                 color texts
-                .slice-title
-                    &::after, &::before
-                        border-bottom solid darken(cinza, 10%)
             &:nth-child(even)
                 background: colors
                 color white
-                .slice-title
-                    &::after, &::before
-                        border-bottom solid lighten(colors, 10%)
             .slice-inner
                 overflow hidden
                 .slice-title, .slice-subtitle

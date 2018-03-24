@@ -3,18 +3,22 @@
 		<h2 class="slice-title price-table-title">{{ site.slice_price-table_title }}</h2>
 		<p class="slice-subtitle price-table-subtitle">{{ site.slice_price-table_description }}</p>
 		<div class="price-table-main">
-			<div class="carousel-price">
+			<div class="table-price">
 				{% for post in site.tags.price %}
 				<div class="item">
 					<ul class="price">
-						<li class="price-velocidade {{ post.tipo | slugify }}">{{ post.velocidade }}<p>MEGA</p></li>
-						<li class="price-field"><small>DOWNLOAD</small> {{ post.velocidade }} Mbps</li>
-						<li class="price-field"><small>R$</small> {{ post.price }}</li>
-						<li class="price-field"><small>CONEXÃO</small> {{ post.tipo }}</li>
-						<li class="price-btn"><a class="btn btn-default btn-s" href="/planos.html"><i class="fa fa-plus"></i>  Saiba Mais</a></li>
+						<li class="price-velocidade {{ post.tipo | slugify }}">
+							<span class="price-number">{{ post.velocidade }}</span>
+							<span class="price-mega">Mega</span>
+						</li>
+						<ul>
+							<li class="price-field"><small>DOWNLOAD</small> {{ post.velocidade }} Mbps</li>
+							<li class="price-field"><small>R$</small> {{ post.price }}</li>
+							<li class="price-btn"><a class="btn btn-default btn-s" href="/planos.html"><i class="fa fa-plus"></i>  Saiba Mais</a></li>
+						</ul>
 					</ul>
 				</div>
-				{% endfor %}		
+				{% endfor %}
 			</div>
 		</div>
 	</div>
