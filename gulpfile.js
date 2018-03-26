@@ -198,7 +198,7 @@ gulp.task("git-commit", function() {
 });
 
 gulp.task("git-push", function() {
-    git.push("origin", "master", function (err) {
+    git.push("origin", "gh-pages", function (err) {
         if (err) throw err;
     });
 });
