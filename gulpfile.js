@@ -198,7 +198,7 @@ gulp.task("git-commit", function() {
 });
 
 gulp.task("git-push", function() {
-    git.push("origin", "gh-pages", function (err) {
+    git.push("origin", "master", function (err) {
         if (err) throw err;
     });
 });
@@ -229,6 +229,7 @@ gulp.task("reconstruir", function(callback) {
         "sync-img",
         "fonts",
         "jekyll-build",
+        "min-css",
         "browserSync-reload",
         callback
         );
