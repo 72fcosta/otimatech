@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "5 Mega"
+title: "15 MBps"
 link: "/planos.html"
 css: fibra
 tags:
 - price
-- price-radio
+- price-fibra
 velocidade: 15
-price: "100,00"
-tipo: Rádio
+price: "79,90"
+tipo: Fibra
 sitemap:
   exclude: "yes"
 ---
 
-Internet via rádio com conexão de 5 Mega.
+Internet via fibra com conexão de 15 Mbps
