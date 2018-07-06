@@ -205,6 +205,26 @@ gulp.task("git-push", function() {
 
 //--------------------------------------------------------------
 
+gulp.task("linode", function() {
+    rsync({
+        src: "./_site/",
+        dest: "diple@45.33.23.219:/var/www/html/" + dominio,
+        ssh: true,
+        recursive: true,
+        exclude: [".htaccess", "gulpfile.js", "config", "description", "HEAD", "hooks", "tarefas-do-projeto.txt"],
+        args: ["-v"],
+        delete: true,
+        compareMode: "checksum",
+        onStdout: function (data) {
+            console.log(data.toString());
+        }
+    }, function() {
+        console.log("End");
+    });
+});
+
+//--------------------------------------------------------------
+
 gulp.task("watch", function () {
     gulp.watch(["*.html", "_includes/**/*.html", "_layouts/*.html", "_config.yml", "_data/*.yml", "_posts/**/*"], ["jekyll-rebuild"]);
     gulp.watch(["_src/styl/**/*.styl"], ["stylus"]);
@@ -242,8 +262,7 @@ gulp.task("deploy", function(callback) {
         "git-commit",
         "git-push",
         "jekyll-build",
-        "min-css",
-        "min-image",
+        "linode",
         callback
         );
 });
