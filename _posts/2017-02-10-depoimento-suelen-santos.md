@@ -10,4 +10,4 @@ sitemap:
   exclude: "yes"
 ---
 
-"Ótima internet. Super indico a Telenew. Muito rápido."
+"Ótima internet. Super indico a Lorem. Muito rápido."

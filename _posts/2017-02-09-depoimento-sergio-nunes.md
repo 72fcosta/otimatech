@@ -10,4 +10,4 @@ sitemap:
   exclude: "yes"
 ---
 
-"Internet de qualidade. Atendimento qualificado. Recomendo Telenew!"
+"Internet de qualidade. Atendimento qualificado. Recomendo Lorem!"
