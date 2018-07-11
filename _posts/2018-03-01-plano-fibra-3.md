@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "25 MBps"
+title: "10 MBps"
 link: "/planos.html"
 css: fibra
 tags:
 - price
 - price-fibra
-velocidade: 25
-price: "99,90"
+velocidade: 10
+price: "79,90"
 tipo: Fibra
 sitemap:
   exclude: "yes"
 ---
 
-Internet via fibra com conexão de 25 Mbps
+Internet via fibra com conexão de 10 Mbps
